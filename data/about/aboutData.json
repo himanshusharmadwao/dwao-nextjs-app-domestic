@@ -1,0 +1,151 @@
+{
+    "aboutBanner": {
+        "primaryTitle": "DWAO is your",
+        "secondaryTitle": "360° MarTech partner",
+        "content": [
+            "Our expertise brings the right mix of skills, experience, and training to create unforgettable digital, experiences. This combination of skills will deliver value and drives growth today and tomorrow."
+        ],
+        "deskImage": "/about-banner.webp",
+        "mobileImage": "/join-us-thumb.webp"
+    },
+    "intro": {
+        "heading": "Who we are",
+        "content": [
+            "We are a group of innovators, game-changers, path-breakers, marketers, strategists, analysts, and thinkers who use human-centric thinking and the best of technology to amplify your brand. Being one of India's largest specialized agencies in Adobe and Google Marketing Cloud Tools and Technologies, DWAO helps organizations to stay on top of the ever-changing market demands."
+        ]
+    },
+    "workPlace": {
+        "heading": "A great place to work",
+        "imgSrc": "/great-place-to-work-thumb.jpg",
+        "content": [
+            "While we transform brands, we make sure our transformers get the best platform to show their capabilities. At DWAO, we aim to build a culture that is based on trust, respect, and freedom to be the best version. We believe in recognizing ideas, talent, and our employees who work together in an authentic and inclusive environment to take brands to another level."
+        ]
+    },
+    "believe": {
+        "imgSrc": "/what-we-belive.webp"
+    },
+    "clients": {
+        "heading": "Some of our clients",
+        "slides": [
+            "/logo/70.png",
+            "/logo/247-ai-logos-idGVmti_XK.png",
+            "/logo/Aditya_Birla_Fashion_and_Retail.png",
+            "/logo/Aditya-Birla-Health.png",
+            "/logo/airtel-logos-idFJ5x2uoZ.png",
+            "/logo/americana.png",
+            "/logo/Apollo-Tyre.png",
+            "/logo/big-bazaar-logos-idsmmsjjXv.png",
+            "/logo/bplogofinal.png",
+            "/logo/brands-for-less.png",
+            "/logo/burpple-logos-idEVYfxBo2.png",
+            "/logo/carrefour.png",
+            "/logo/cars24-logos-idmo93PYUh.png",
+            "/logo/circles-life-logos-idkC1QV_1Y.png",
+            "/logo/Croma.png",
+            "/logo/deutsche-telekom-logos-idN7AqvTgC.png",
+            "/logo/dominos-pizza-logos-idRy2XjJJX.png",
+            "/logo/droom-logos-idZKpCDfrp.png",
+            "/logo/esign-genie-logos-id0ZTMJV7i.png",
+            "/logo/exide-life-insurance.png",
+            "/logo/ey-logos-idmNrmQtOF.png",
+            "/logo/faballey-logos-idswWw8pmW.png",
+            "/logo/ferns-n-petals.png",
+            "/logo/ford-motor-company-logos-idMxAfwXqS.png",
+            "/logo/goodearth.png",
+            "/logo/hdfc-bank-logos-idjsEov0O2.png",
+            "/logo/hdfcsec.png",
+            "/logo/hdfc-standard-life-insurance.png",
+            "/logo/Home_Shop_18_Logo.png",
+            "/logo/HTDIGITAL.png",
+            "/logo/hyundai-logos-idzh8IFkkF.png",
+            "/logo/icici-bank-logos-id7hgX8qGP.png"
+        ]
+    },
+    "partners": {
+        "heading": "Our partners in success",
+        "imgSrc": "/partners-about.png",
+        "content": [
+            "We shake things up with our creativity and make technology work for you. At DWAO, we have the best technology and creative partners who help us leverage the latest tech and deliver eyeball-grabbing results."
+        ]
+    },
+    "services": {
+        "heading": "Our Services",
+        "content": [
+            "From analytics to segmentation, and SEO to website development, we offer services that help brands understand their customers better, keep them captivated, and create 360-degree value for them.",
+            "Our services incliudes Analytics, Paid Marketing, SEO, CRO, Automation, ML & AI and Website Development"
+        ]
+    },
+    "industries": {
+        "heading": "The industries that we serve",
+        "content": [
+            "You may be selling chips or cars; we make sure that whatever business or industry you are in, you always deliver growth, customer satisfaction, and purposeful results.",
+            "We serve BFSI, Auto, OTT, Media, Ecommerce, Travel and Telecom"
+        ]
+    },
+    "impact": {
+        "heading": "360 Impact",
+        "content": [
+            "DWAO is your one-stop solution when it comes to 360 impact. We follow a holistic approach with a range of services including assessment, readiness enablement, customized implementation, and ongoing training to help your organization make a long-lasting impact across all touchpoints."
+        ]
+    },
+    "ourWork": {
+        "heading": "Our Work",
+        "content": [
+            "Find out how we have helped our customers."
+        ],
+        "link": {
+            "linkTitle": "Browse All",
+            "linkHref": "#"
+        },
+        "overlay": {
+            "imgSrc": "/featured-thumb-airtel.webp",
+            "heading": "Data Analytics",
+            "category": "Case Studies",
+            "subCategory": "Digital Analysis",
+            "title": "How DWAO helped Airtel to 100% Improvement in overall conversion happening online."
+        }
+    },
+    "experts": {
+        "heading": "Featured Experts",
+        "card": [
+            {
+                "name": "Ketav Sharma",
+                "description": "Ketav Sharma is co-founder and CEO at DWAO, which he founded in 2014 with co-founder Prabhat Kumar. Recognizing that analytic service providers are using outdated metrics for their customers, Ketav built an Analytics Tool for Adobe Marketing Stack used by 100+ top clients across India and APAC. He is now transforming how companies measure data analytics across web and mobile devices.",
+                "imgSrc": "/ketav-sharma.png",
+                "twitterUrl": "https://twitter.com/ketavsharma",
+                "linkedInUrl": "https://linkedin.com/in/ketavsharma"
+            },
+            {
+                "name": "Prabhat Kumar",
+                "description": "Prabhat Kumar co-founded DWAO, which he launched in 2014 with Ketav Sharma. Previously he held leadership role at Denstu Web Chutney helping Fortune 500 clients like Coke, Airtel, Nokia build expertise into their Digital Analytics environment.",
+                "imgSrc": "/prabhat-kumar.png",
+                "twitterUrl": "https://twitter.com/prabhatkumar",
+                "linkedInUrl": "https://linkedin.com/in/prabhatkumar"
+            }
+        ]
+    },
+    "team": {
+        "heading": "Join our team of catalysts",
+        "imgSrc": "/join-us-thumb.webp",
+        "link": {
+            "linkTitle": "View open positions",
+            "linkHref": "#"
+        }
+    },
+    "contact": {
+        "details": {
+            "heading": "Interested in learning more about us?",
+            "link": {
+                "linkTitle": "Explore Capabilities",
+                "linkHref": "#"
+            }
+        },
+        "cta": {
+            "heading": "Reach out to us so we can guide you",
+            "link": {
+                "linkTitle": "Write to us",
+                "linkHref": "#"
+            }
+        }
+    }
+}

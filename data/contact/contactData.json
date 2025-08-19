@@ -1,0 +1,57 @@
+{
+    "contactBanner": {
+        "primaryTitle": "Reach out to Us",
+        "deskImage": "/contact-us.jpg",
+        "mobileImage": "/contact-us-mobile.jpg"
+    },
+    "offices": [
+        {
+            "address": [
+                "4th Floor, 250, Phase IV",
+                "Udyog Vihar, Sector 18",
+                "Gurugram",
+                "Haryana 122015"
+            ],
+            "contact": {
+                "phone": "+91-9213627091",
+                "email": "info@dwao.in"
+            }
+        },
+        {
+            "address": [
+                "Building Number 4, Block A",
+                "Basement, Dwarka Sector 19",
+                "New Delhi - 110077"
+            ]
+        },
+        {
+            "address": [
+                "308, 3rd Floor",
+                "Al Zarooni Business Center",
+                "Al Barsha - Al Barsha 1",
+                "Dubai - United Arab Emirates"
+            ],
+            "contact": {
+                "phone": "+971-0504129259",
+                "email": "info@dwao.ae"
+            }
+        }
+    ],
+    "mapSrc": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14026.075867356014!2d77.0814968!3d28.4940299!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe0ddff6b4e4a2885!2sDWAO!5e0!3m2!1sen!2sin!4v1668759649683!5m2!1sen!2sin",
+    "contact": {
+        "details": {
+            "heading": "Interested in learning more about us?",
+            "link": {
+                "linkTitle": "Explore Capabilities",
+                "linkHref": "#"
+            }
+        },
+        "cta": {
+            "heading": "Reach out to us so we can guide you",
+            "link": {
+                "linkTitle": "Write to us",
+                "linkHref": "#"
+            }
+        }
+    }
+}

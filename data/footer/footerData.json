@@ -1,0 +1,136 @@
+{
+    "companyInfo": [
+        {
+            "title": "DWAO",
+            "address": "4th Floor, 250, Phase IV, Udyog Vihar, Sector 18, Gurgaon, Haryana 122015",
+            "description": "Stay current with our latest insights and resources",
+            "subscription": {
+                "placeholder": "Enter your email ID",
+                "buttonText": "Subscribe"
+            }
+        }
+    ],
+    "columns": [
+        {
+            "title": "",
+            "links": [
+                {
+                    "text": "About",
+                    "href": "/about"
+                },
+                {
+                    "text": "Insights & Case Studies",
+                    "href": "/insights-case-studies"
+                },
+                {
+                    "text": "Careers",
+                    "href": "/contact"
+                },
+                {
+                    "text": "Contact",
+                    "href": "/contact"
+                }
+            ]
+        },
+        {
+            "title": "Capabilities",
+            "links": [
+                {
+                    "text": "Digital Analytics",
+                    "href": "/digital-analytics"
+                },
+                {
+                    "text": "Marketing Automation",
+                    "href": "/marketing-automation"
+                },
+                {
+                    "text": "Adobe Analytics",
+                    "href": "/adobe-analytics"
+                },
+                {
+                    "text": "Data Management Platforms (DMP)",
+                    "href": "/data-management-platforms"
+                },
+                {
+                    "text": "Customer Data Platform (CDP)",
+                    "href": "/customer-data-platform"
+                },
+                {
+                    "text": "Digital Marketing Activation",
+                    "href": "/digital-marketing-activation"
+                },
+                {
+                    "text": "Business Intelligence",
+                    "href": "/business-intelligence"
+                },
+                {
+                    "text": "Data Automation",
+                    "href": "/data-automation"
+                },
+                {
+                    "text": "DV360",
+                    "href": "/dv360"
+                },
+                {
+                    "text": "Development",
+                    "href": "/development"
+                },
+                {
+                    "text": "Training and Workshops",
+                    "href": "/training-workshops"
+                },
+                {
+                    "text": "Privacy Management",
+                    "href": "/privacy-management"
+                }
+            ]
+        },
+        {
+            "title": "Partners",
+            "links": [
+                {
+                    "text": "Adobe",
+                    "href": "/partners/adobe"
+                },
+                {
+                    "text": "Google",
+                    "href": "/partners/google"
+                },
+                {
+                    "text": "Mixpanel",
+                    "href": "/partners/mixpanel"
+                },
+                {
+                    "text": "CleverTap",
+                    "href": "/partners/clevertap"
+                }
+            ]
+        }
+    ],
+    "legalLinks": [
+        {
+            "text": "Privacy Policy",
+            "href": "/privacy-policy"
+        },
+        {
+            "text": "Terms & Conditions",
+            "href": "#"
+        },
+        {
+            "text": "Legal",
+            "href": "#"
+        }
+    ],
+    "socialLinks": [
+        {
+            "title": "Twitter",
+            "icon": "/icons/fa-twitter.svg",
+            "href": "#"
+        },
+        {
+            "title": "LinkedIn",
+            "icon": "/icons/fa-linkedin.svg",
+            "href": "#"
+        }
+    ]
+}

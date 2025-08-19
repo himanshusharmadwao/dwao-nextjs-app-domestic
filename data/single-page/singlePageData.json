@@ -1,0 +1,156 @@
+{
+    "digital-analytics": {
+        "banner": {
+            "primaryTitle": "Digital Analytics",
+            "content": [
+                "At DWAO, we bring the best of technology and our years of experience together to deliver knockout results for businesses."
+            ],
+            "deskImage": "/marketing-automation.jpg",
+            "mobileImage": "/marketing-automation-mobile.jpg",
+            "linkTitle": "Request a demo",
+            "linkSrc": "#"
+        }
+    },
+    "marketing-automation": {
+        "banner": {
+            "primaryTitle": "Marketing Automation",
+            "content": [
+                "We use Marketing Automation to automate monotonous, repetitive tasks."
+            ],
+            "deskImage": "/marketing-automation.jpg",
+            "mobileImage": "/marketing-automation-mobile.jpg",
+            "linkTitle": "Request a demo",
+            "linkSrc": "#"
+        }
+    },
+    "partners": {
+        "banner": {
+            "primaryTitle": "Partners",
+            "content": [
+                "We use Marketing Automation to automate monotonous, repetitive tasks."
+            ],
+            "deskImage": "/marketing-automation.jpg",
+            "mobileImage": "/marketing-automation-mobile.jpg",
+            "linkTitle": "Request a demo",
+            "linkSrc": "#"
+        }
+    },
+    "sections": {
+        "Implementation" : {
+            "title": "Implementation",
+            "imgSrc": "/implementation-thumb.png",
+            "variant": "primary",
+            "accordionData": [
+                {
+                    "accTitle": "Business Strategy",
+                    "accContent": "Our team at DWAO helps you define a robust business strategy using Adobe Analytics to deliver real-time insights and customer behavior analysis for intelligent marketing decisions.",
+                    "accLink": "/business-strategy"
+                },
+                {
+                    "accTitle": "Solutioning",
+                    "accContent": "We provide tailored solutions to implement Adobe Analytics effectively, ensuring seamless integration with your existing systems and workflows.",
+                    "accLink": "/solutioning"
+                },
+                {
+                    "accTitle": "Enablement",
+                    "accContent": "Our enablement services ensure your team is fully trained and equipped to leverage Adobe Analytics for maximum impact on your marketing campaigns.",
+                    "accLink": "/enablement"
+                },
+                {
+                    "accTitle": "Optimization",
+                    "accContent": "We optimize your Adobe Analytics setup to ensure you’re getting the most out of your data, driving better decision-making and improved ROI.",
+                    "accLink": "/optimization"
+                }
+            ]
+        },
+        "Audit" :{
+            "title": "Audit",
+            "imgSrc": "/implementation-thumb.png",
+            "variant": "secondary",
+            "accordionData": [
+                {
+                    "accTitle": "Data Accuracy Check",
+                    "accContent": "We perform a thorough audit of your Adobe Analytics data to ensure accuracy and reliability, identifying any discrepancies that could affect your insights.",
+                    "accLink": "/data-accuracy-check"
+                },
+                {
+                    "accTitle": "Implementation Review",
+                    "accContent": "Our team reviews your Adobe Analytics implementation to ensure it aligns with best practices and meets your business needs.",
+                    "accLink": "/implementation-review"
+                },
+                {
+                    "accTitle": "Performance Analysis",
+                    "accContent": "We analyze the performance of your Adobe Analytics setup to identify areas for improvement and optimization.",
+                    "accLink": "/performance-analysis"
+                },
+                {
+                    "accTitle": "Compliance Check",
+                    "accContent": "We ensure your Adobe Analytics setup complies with data privacy regulations and industry standards.",
+                    "accLink": "/compliance-check"
+                }
+            ]
+        },
+        "CRO": {
+            "title": "Conversion Rate Optimization",
+            "imgSrc": "/implementation-thumb.png",
+            "variant": "primary",
+            "accordionData": [
+                {
+                    "accTitle": "A/B Testing",
+                    "accContent": "We use Adobe Analytics to run A/B tests, helping you identify the most effective strategies for improving conversion rates.",
+                    "accLink": "/ab-testing"
+                },
+                {
+                    "accTitle": "User Behavior Analysis",
+                    "accContent": "Our team analyzes user behavior data to uncover insights that drive better conversion rate optimization strategies.",
+                    "accLink": "/user-behavior-analysis"
+                },
+                {
+                    "accTitle": "Funnel Optimization",
+                    "accContent": "We optimize your conversion funnels using Adobe Analytics to reduce drop-off rates and increase conversions.",
+                    "accLink": "/funnel-optimization"
+                },
+                {
+                    "accTitle": "Personalization",
+                    "accContent": "We leverage Adobe Analytics to deliver personalized experiences that improve engagement and conversion rates.",
+                    "accLink": "/personalization"
+                }
+            ]
+        }
+    },
+    "relatedCapabilities": {
+        "heading": "Related Capabilities",
+        "items": [
+            {
+                "imageSrc": "/thumb-campaign.jpg",
+                "linkTitle": "ADOBE CAMPAIGN CLASSIC",
+                "linkSrc": "#"
+            },
+            {
+                "imageSrc": "/thumb-marketing-automation.jpg",
+                "linkTitle": "CLEVERTAP",
+                "linkSrc": "#"
+            },
+            {
+                "imageSrc": "/thumb-marketing-automation.jpg",
+                "linkTitle": "MOENGAGE",
+                "linkSrc": "#"
+            },
+            {
+                "imageSrc": "/thumb-campaign.jpg",
+                "linkTitle": "ADOBE CAMPAIGN CLASSIC",
+                "linkSrc": "#"
+            },
+            {
+                "imageSrc": "/thumb-marketing-automation.jpg",
+                "linkTitle": "CLEVERTAP",
+                "linkSrc": "#"
+            },
+            {
+                "imageSrc": "/thumb-marketing-automation.jpg",
+                "linkTitle": "MOENGAGE",
+                "linkSrc": "#"
+            }
+        ]
+    }
+}

@@ -1,0 +1,524 @@
+.header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: 0.3s;
+}
+
+.topMenu {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.secondaryPage .topMenu {
+    border-bottom: 1px solid #ddd;
+}
+
+.header.active .topMenu {
+    background: #fff;
+}
+
+.cssmenu {
+    position: relative;
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.logo {
+    position: relative;
+    z-index: 123;
+    padding: 10px 0;
+    color: #fff;
+    width: 10%;
+    font-size: 28px;
+    line-height: 1;
+}
+
+.logo a {
+    color: #fff;
+    transition: 0.3s;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-helveticaneuebold);
+}
+
+.logo a:hover,
+.header.active .logo a,
+.secondaryPage .logo a {
+    color: var(--mainColor);
+}
+
+.cssmenu,
+.cssmenu ul,
+.cssmenu ul li,
+.cssmenu ul li a {
+    border: 0;
+    list-style: none;
+    line-height: 1;
+    display: flex;
+    position: static;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cssmenu>ul>li>a {
+    padding: 30px 15px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    transition: 0.3s;
+    padding-right: 30px;
+    transition: 0.3s;
+}
+
+.header.active .cssmenu>ul>li>a,
+.secondaryPage .cssmenu>ul>li>a,
+.header.active .regionTrigger {
+    color: var(--color-con-dark);
+}
+
+.header.active .cssmenu>ul>li>a.active {
+    color: var(--mainColor);
+    text-decoration: underline;
+}
+
+.regionTrigger {
+    max-width: 116px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* .header.active .regionTrigger */
+.secondaryPage .regionTrigger,
+.header .regionTrigger {
+    font-size: 17px;
+    padding: 30px 0px 30px 0px;
+    border-radius: 4px;
+}
+
+.secondaryPage .regionTrigger{
+    color: var(--color-con-dark);
+}
+
+.cssmenu>ul>li:hover>a {
+    color: var(--mainColor);
+}
+
+.cssmenu ul li.active,
+.cssmenu ul li.active:hover,
+.cssmenu ul li:hover {
+    transition: background 0.3s;
+}
+
+.cssmenu ul ul {
+    display: flex;
+    position: absolute;
+    left: -9999px;
+    width: 100%;
+    top: 75px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.9);
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 2rem 4%;
+    z-index: 9;
+}
+
+.cssmenu li:hover>ul {
+    left: 0;
+}
+
+.cssmenu li:hover>ul>li {
+    height: 35px;
+}
+
+.cssmenu ul ul li {
+    height: 0;
+    transition: 0.25s;
+    width: 25%;
+    position: relative;
+}
+
+.cssmenu ul ul li a {
+    padding: 20px 10px;
+    font-size: 15px;
+    text-decoration: none;
+    color: #333;
+    position: relative;
+    display: block;
+}
+
+.cssmenu ul ul li:hover>a,
+.cssmenu ul ul li a:hover {
+    color: var(--mainColor);
+    text-decoration: underline;
+    z-index: 99999;
+}
+
+.cssmenu ul ul ul li {
+    width: 100%;
+}
+
+.cssmenu>ul>li>ul>li>a+ul {
+    flex-direction: column;
+    padding: 20px;
+}
+
+.submenu::after,
+.submenu::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background: #000;
+    transform: translateY(-50%);
+    transition: 0.5s;
+}
+
+.submenu::after {
+    right: -4.755555px;
+    width: 8px;
+    height: 2px;
+}
+
+.submenu::before {
+    right: -2px;
+    width: 2px;
+    height: 8px;
+}
+
+.submenu:hover::before {
+    top: -2%;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.cssmenu ul ul ul {
+    margin-left: 0;
+    top: 1.5rem;
+    width: 100%;
+    padding: 0;
+    background: #f4f4f4;
+    position: absolute;
+}
+
+.homeNavParent {
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.homeNav {
+    margin: 0;
+    /* padding: 1rem 0; */
+    padding: 0 5%;
+    transition: 0.3s;
+    display: none;
+}
+
+.header.active .homeNav {
+    display: block;
+}
+
+.homeNav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+}
+
+.homeNav ul li {
+    margin: 0 2rem 0 0;
+}
+
+.homeNav ul li a {
+    color: #333;
+    font-size: 1.1rem;
+}
+
+.progress {
+    height: 5px;
+    background-color: var(--mainColor);
+    transition: width 0.1s linear, opacity 0.1s linear;
+    min-width: 1%;
+    opacity: 0;
+    width: 1%;
+}
+
+.header.active .progress {
+    opacity: 1;
+}
+
+@media screen and (max-width: 992px) {
+    .cssmenu ul {
+        display: none;
+    }
+
+    .cssmenu>ul>li,
+    .logo {
+        float: none;
+    }
+
+    .logo {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 100%;
+    }
+
+    .cssmenu ul {
+        position: absolute;
+        top: 0;
+        padding: 5rem 0 0;
+        background: linear-gradient(to bottom, #f2f1f0 0, #f2f1f0 0, #fff 100%);
+        height: 100vh;
+        left: 0;
+        width: 100%;
+    }
+
+    .cssmenu ul li a,
+    .cssmenu ul ul li a {
+        width: 100%;
+        border-bottom: 0;
+    }
+
+    .cssmenu>ul>li>a {
+        font-size: 30px;
+        padding: 15px 30px;
+        color: #333;
+    }
+
+    .cssmenu ul ul li a {
+        color: #333;
+        background: none;
+        font-size: 19px;
+        padding: 15px 30px;
+    }
+
+    .cssmenu ul ul,
+    .cssmenu ul ul ul {
+        position: relative;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        text-align: left;
+        opacity: 0;
+    }
+
+    .cssmenu ul li ul.open {
+        left: 0;
+        flex-direction: column;
+        z-index: 999;
+        background: linear-gradient(to bottom, #f2f1f0 0, #f2f1f0 0, #fff 100%);
+        opacity: 1;
+    }
+
+    .header.active {
+        background: #fff;
+    }
+
+    .header .mobileBar {
+        z-index: 99999
+    }
+
+    .header .mobileBar img {
+        filter: brightness(0) invert(1);
+        transition: filter 0.3s ease;
+    }
+
+    .header.active .mobileBar img {
+        filter: brightness(0);
+    }
+}
+
+
+/* ===================== mobile header style */
+
+.mobileMenu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f2f1f0 0, #f2f1f0 0, #fff 100%);
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 9999999;
+    overflow-y: auto;
+    cursor: pointer;
+}
+
+.mobileMenuOpen {
+    transform: translateY(0);
+}
+
+.mobileMenuList {
+    padding: 60px 20px 20px;
+    list-style: none;
+}
+
+.mobileMenuItem {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.mobileMenuItemContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+.mobileMenuItem a {
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.subMenuToggle {
+    background: none;
+    border: none;
+    color: 000;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+}
+
+.mobileSubMenu {
+    list-style: none;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.subMenuOpen {
+    max-height: 1200px;
+}
+
+.mobileSubMenuItem a {
+    display: block;
+    padding: 12px 20px;
+    color: #000;
+    text-decoration: none;
+    font-size: 30px;
+}
+
+/* Add specific styling for third-level items */
+.mobileSubMenu .mobileSubMenu {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 20px;
+}
+
+.mobileSubMenu .mobileSubMenuItem a {
+    font-size: 30px;
+    color: #000;
+}
+
+.subMenuStack {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #f2f1f0;
+    /* background: linear-gradient(to bottom, #f2f1f0 0, #f2f1f0 0, #fff 100%); */
+    transform: translateY(-100%);
+    transition: transform 0.6s ease-in-out;
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: auto;
+}
+
+.subMenuStack.open {
+    transform: translateY(0);
+}
+
+.subMenuStack>ul {
+    text-indent: -10px;
+    display: flex;
+    flex-direction: column;
+    /* padding: 0 10px; */
+}
+
+.subMenuStack>ul li a {
+    color: #000;
+    font-size: 19px;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goBack {
+    padding: 5px 20px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.subSubMenuStack {
+    padding-left: 20px;
+    height: 100vh;
+    max-height: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out, max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.subSubMenuStack.open {
+    max-height: 1000px;
+    transform: translateY(0);
+}
+
+/* ========region style */
+
+.regionList {
+    overflow-y: auto;
+    max-height: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: transform 0.4s ease-in-out, max-height 0.4s ease-in-out;
+    background-color: #f4f4f4;
+}
+
+.regionList span {
+    border-bottom: 1.5px solid transparent;
+}
+
+.regionList span:hover {
+    border-bottom: 1.5px solid var(--mainColor);
+}
+
+.dropdownOpen .regionList {
+    max-height: 300px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.regionList::-webkit-scrollbar {
+    display: none;
+}
+
+/* .regionList::-webkit-scrollbar-thumb {
+    background-color: #aeaeae;
+    border-radius: 7px;
+}
+
+.regionList::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 7px;
+} */

@@ -1,0 +1,132 @@
+.markdownStyle h1 {
+    font-size: 2.2em;
+    margin: 0.67em 0;
+}
+
+.markdownStyle h2 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.markdownStyle h3 {
+    font-size: 1.4em;
+    margin: 0.67em 0;
+}
+
+.markdownStyle h4 {
+    font-size: 1.2em;
+    margin: 0.67em 0;
+}
+
+.markdownStyle h5 {
+    font-size: 1em;
+    margin: 0.67em 0;
+}
+
+.markdownStyle h6 {
+    font-size: 0.8em;
+    margin: 0.67em 0;
+}
+
+.markdownStyle p {
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+
+.markdownStyle u {
+    text-decoration: underline;
+    color: inherit;
+}
+
+.markdownStyle em,
+.markdownStyle i {
+    font-style: italic;
+}
+
+.markdownStyle strong,
+.markdownStyle b {
+    font-weight: bold;
+}
+
+.markdownStyle ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.markdownStyle ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+.markdownStyle ol {
+    list-style-type: decimal;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.markdownStyle ol li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #333;
+}
+
+
+.markdownStyle img {
+    border-radius: 10px;
+}
+
+.markdownStyle blockquote {
+    border-left: 3px solid var(--mainColor);
+    margin-bottom: 20px;
+    padding: 15px 0 15px 15px;
+}
+
+.markdownStyle blockquote p {
+    color: #717171;
+    font-size: px;
+    letter-spacing: 0.5px;
+    padding-bottom: 0;
+}
+
+.markdownStyle pre{
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    margin: .67em 0;
+}
+
+.markdownStyle pre code{
+    color: #eee;
+}
+
+.markdownStyle table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+/* .markdownStyle table    */
+
+.markdownStyle table th,
+.markdownStyle table td {
+  border: 1px solid #ddd;
+  padding: 0.75em;
+}
+
+.markdownStyle table th {
+  background-color: var(--mainColor);
+  font-weight: 600;
+  color: #fff;
+}
+
+.markdownStyle table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+.markdownStyle table tr:hover {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,195 @@
+{
+  "logo": {
+    "text": "DWAO",
+    "href": "/"
+  },
+  "mainMenu": [
+    {
+      "id": 1,
+      "text": "About",
+      "href": "/about",
+      "subMenu": [
+        {
+          "id": 101,
+          "text": "Our Culture",
+          "href": "/culture",
+          "subSubMenu": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Capabilities",
+      "href": "#",
+      "subMenu": [
+        {
+          "id": 102,
+          "text": "Digital Analytics",
+          "href": "/digital-analytics",
+          "subSubMenu": [
+            { "id": 201, "text": "Adobe Analytics", "href": "#" },
+            { "id": 202, "text": "GA4", "href": "#" },
+            { "id": 203, "text": "Google Analytics", "href": "#" },
+            { "id": 204, "text": "Customer Journey", "href": "#" },
+            { "id": 205, "text": "Mixpanel", "href": "#" }
+          ]
+        },
+        {
+          "id": 103,
+          "text": "Marketing Automation",
+          "href": "/marketing-automation",
+          "subSubMenu": [
+            { "id": 206, "text": "Adobe Campaign Classic", "href": "#" },
+            { "id": 207, "text": "Clevertap", "href": "#" },
+            { "id": 208, "text": "Moengage", "href": "#" },
+            { "id": 209, "text": "Web Engage", "href": "#" }
+          ]
+        },
+        {
+          "id": 104,
+          "text": "AB Testing and Personalization (CRO)",
+          "href": "/",
+          "subSubMenu": [
+            { "id": 210, "text": "Adobe Target", "href": "#" },
+            { "id": 211, "text": "Google Optimize", "href": "#" },
+            { "id": 212, "text": "Optimizely", "href": "#" }
+          ]
+        },
+        {
+          "id": 105,
+          "text": "Digital Marketing Activation",
+          "href": "/",
+          "subSubMenu": [
+            { "id": 213, "text": "Paid Search", "href": "#" },
+            { "id": 214, "text": "DV360", "href": "#" },
+            { "id": 215, "text": "SEO", "href": "#" },
+            { "id": 216, "text": "Paid Social", "href": "#" },
+            { "id": 217, "text": "Affiliate Marketing", "href": "#" }
+          ]
+        },
+        {
+          "id": 106,
+          "text": "Technology",
+          "href": "/",
+          "subSubMenu": [
+            { "id": 218, "text": "Adobe AEM", "href": "#" },
+            { "id": 219, "text": "AEM Assets", "href": "#" },
+            { "id": 220, "text": "Web Framework", "href": "#" },
+            { "id": 221, "text": "User Experience Design", "href": "#" }
+          ]
+        },
+        {
+          "id": 107,
+          "text": "ML and AI",
+          "href": "/",
+          "subSubMenu": [
+            { "id": 222, "text": "Data Automation", "href": "#" },
+            { "id": 223, "text": "Business Intelligence", "href": "#" }
+          ]
+        },
+        {
+          "id": 108,
+          "text": "Customer Data Platform [CDP]",
+          "href": "/",
+          "subSubMenu": [
+            { "id": 224, "text": "Adobe Experience Platform", "href": "#" },
+            { "id": 225, "text": "Segment", "href": "#" }
+          ]
+        },
+        {
+          "id": 109,
+          "text": "Data Management Platform",
+          "href": "/",
+          "subSubMenu": [
+            { "id": 226, "text": "Adobe Audience Manager", "href": "#" }
+          ]
+        },
+        {
+          "id": 110,
+          "text": "Training and Workshops",
+          "href": "/",
+          "subSubMenu": []
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Partners",
+      "href": "/partners",
+      "subMenu": [
+        {
+          "id": 111,
+          "text": "Adobe",
+          "href": "/",
+          "subSubMenu": []
+        },
+        {
+          "id": 112,
+          "text": "Google",
+          "href": "/",
+          "subSubMenu": []
+        },
+        {
+          "id": 113,
+          "text": "Mixpanel",
+          "href": "/",
+          "subSubMenu": []
+        },
+        {
+          "id": 114,
+          "text": "Clevertap",
+          "href": "/",
+          "subSubMenu": []
+        },
+        {
+          "id": 115,
+          "text": "MoEngage",
+          "href": "/",
+          "subSubMenu": []
+        },
+        {
+          "id": 116,
+          "text": "OneTrust",
+          "href": "/",
+          "subSubMenu": []
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Insights & case studies",
+      "href": "/insights-and-case-studies",
+      "subMenu": []
+    },
+    {
+      "id": 5,
+      "text": "Blog",
+      "href": "/blog",
+      "subMenu": []
+    },
+    {
+      "id": 6,
+      "text": "Contact Us",
+      "href": "/contact",
+      "subMenu": []
+    }
+  ],
+  "homeNav": [
+    {
+      "text": "How can we help you",
+      "href": "#"
+    },
+    {
+      "text": "Client stories & case studies",
+      "href": "#"
+    },
+    {
+      "text": "Insights & resources",
+      "href": "#"
+    },
+    {
+      "text": "Join our team",
+      "href": "#"
+    }
+  ]
+}

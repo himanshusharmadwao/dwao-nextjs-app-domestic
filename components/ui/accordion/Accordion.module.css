@@ -1,0 +1,23 @@
+.accordionStyle {
+  overflow: auto;
+  max-height: 400px;
+}
+
+.accordionStyle::-webkit-scrollbar {
+  width: 7px;
+}
+
+.accordionStyle::-webkit-scrollbar-thumb {
+  background-color: #e7e7e7;
+  border-radius: 6px;
+}
+
+.accordionStyle::-webkit-scrollbar-thumb:hover {
+  background-color: #cfcfcf;
+}
+
+
+.accordionStyle p {
+  padding-bottom: 0 !important;
+  font-size: 1em !important;
+}

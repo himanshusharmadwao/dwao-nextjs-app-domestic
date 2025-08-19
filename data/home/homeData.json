@@ -1,0 +1,199 @@
+{
+    "section1": {
+        "bannerSlides": [
+            {
+                "title": "Delivering Value",
+                "subtitle": "Powered by MarTech",
+                "linkTitle": "Learn about us",
+                "linkHref": "",
+                "desktopImg": "/why-us.webp",
+                "mobileImg": "/why-us-mobile.webp",
+                "navLabel": "Why Us"
+            },
+            {
+                "title": "Helping brands turn their",
+                "subtitle": "vision into reality",
+                "linkTitle": "Learn about us",
+                "linkHref": "",
+                "desktopImg": "/what-we-do.webp",
+                "mobileImg": "/what-we-do-mobile.webp",
+                "navLabel": "What we do"
+            },
+            {
+                "title": "We shake things up with our",
+                "subtitle": "creativity and make technology work for you",
+                "linkTitle": "Know More",
+                "linkHref": "",
+                "desktopImg": "/partners.webp",
+                "mobileImg": "/partners-mobile.webp",
+                "navLabel": "Our Partners"
+            },
+            {
+                "title": "We have worked with over",
+                "subtitle": "250+ clients across the world",
+                "linkTitle": "Learn More",
+                "linkHref": "",
+                "desktopImg": "/our-customers.webp",
+                "mobileImg": "/our-customers-mobile.webp",
+                "navLabel": "Customers"
+            }
+        ]
+    },
+    "section2": {
+        "heading": "Our success stories",
+        "quote": {
+            "content": "Setting up Adobe Experience Cloud and Google Analytics was really a daunting task for us at Airtel. However with professional consultancy from DWAO we were able to smoothly setup all tools.",
+            "name": "Abhinav Raj",
+            "designition": "Head Digital Analytics, Airtel"
+        },
+        "overlay": {
+            "imgSrc": "/featured-thumb-airtel.webp",
+            "heading": "Featured",
+            "category": "Case Studies",
+            "subCategory": "Digital Analysis",
+            "title": "How DWAO helped Airtel to 100% Improvement in overall conversion happening online."
+        }
+    },
+    "section3": {
+        "heading": "More Case Studies",
+        "slides": [
+            {
+                "imageSrc": "/featured-thumb-lenskart.webp",
+                "title": "How DWAO helped Reliance Mutual Fund increase their data accuracy beyond 95%",
+                "description": "DWAO helped Reliance Mutual Fund in setting up an accurate measurement platform to understand customer behavior and execution of optimization roadmap across their digital properties.",
+                "href": "#"
+            },
+            {
+                "imageSrc": "/featured-thumb-lenskart.webp",
+                "title": "How DWAO improved Another Brand's digital efficiency",
+                "description": "DWAO assisted Another Brand in optimizing their digital strategies with enhanced data insights.",
+                "href": "#"
+            },
+            {
+                "imageSrc": "/featured-thumb-lenskart.webp",
+                "title": "How DWAO boosted Third Brand's performance",
+                "description": "DWAO provided Third Brand with advanced analytics solutions to boost their digital presence.",
+                "href": "#"
+            },
+            {
+                "imageSrc": "/featured-thumb-lenskart.webp",
+                "title": "How DWAO enhanced Fourth Brand's metrics",
+                "description": "DWAO helped Fourth Brand achieve better results through data-driven optimization.",
+                "href": "#"
+            }
+        ]
+    },
+    "section4": {
+        "heading": "Some of our clients",
+        "slides": [
+            "/logo/70.png",
+            "/logo/247-ai-logos-idGVmti_XK.png",
+            "/logo/Aditya_Birla_Fashion_and_Retail.png",
+            "/logo/Aditya-Birla-Health.png",
+            "/logo/airtel-logos-idFJ5x2uoZ.png",
+            "/logo/americana.png",
+            "/logo/Apollo-Tyre.png",
+            "/logo/big-bazaar-logos-idsmmsjjXv.png",
+            "/logo/bplogofinal.png",
+            "/logo/brands-for-less.png",
+            "/logo/burpple-logos-idEVYfxBo2.png",
+            "/logo/carrefour.png",
+            "/logo/cars24-logos-idmo93PYUh.png",
+            "/logo/circles-life-logos-idkC1QV_1Y.png",
+            "/logo/Croma.png",
+            "/logo/deutsche-telekom-logos-idN7AqvTgC.png",
+            "/logo/dominos-pizza-logos-idRy2XjJJX.png",
+            "/logo/droom-logos-idZKpCDfrp.png",
+            "/logo/esign-genie-logos-id0ZTMJV7i.png",
+            "/logo/exide-life-insurance.png",
+            "/logo/ey-logos-idmNrmQtOF.png",
+            "/logo/faballey-logos-idswWw8pmW.png",
+            "/logo/ferns-n-petals.png",
+            "/logo/ford-motor-company-logos-idMxAfwXqS.png",
+            "/logo/goodearth.png",
+            "/logo/hdfc-bank-logos-idjsEov0O2.png",
+            "/logo/hdfcsec.png",
+            "/logo/hdfc-standard-life-insurance.png",
+            "/logo/Home_Shop_18_Logo.png",
+            "/logo/HTDIGITAL.png",
+            "/logo/hyundai-logos-idzh8IFkkF.png",
+            "/logo/icici-bank-logos-id7hgX8qGP.png"
+        ]
+    },
+    "section5": {
+        "desktopImg": "/home-banner-new.webp",
+        "mobileImg": "/home-banner1-mobile.webp",
+        "heading": "View our insights, guides and other resources to map your path to success",
+        "link": {
+            "linkTitle": "Explore all resources",
+            "linkHref": "#"
+        }
+    },
+    "section6": {
+        "heading": "Join our team of catalysts",
+        "imgSrc": "/join-us-thumb.webp",
+        "link": {
+            "linkTitle": "View open positions",
+            "linkHref": "#"
+        }
+    },
+    "section7": {
+        "heading": "Clients Testimonials",
+        "slides": [
+            {
+                "rating": 5,
+                "quote": "Working with DWAO transformed our website! Their exceptional analytics insights & CRO strategies increased our sales and conversions. Highly recommend their expertise and dedication!",
+                "name": "Vivek Bhardwaj",
+                "title": "Global Head Digital Marketing - ZS",
+                "imageSrc": "/client_male.png"
+            },
+            {
+                "rating": 5,
+                "quote": "DWAO's data-driven approach revolutionized our digital campaigns. Their team is professional and delivered results beyond expectations!",
+                "name": "Priya Sharma",
+                "title": "Digital Strategy Lead - TechCorp",
+                "imageSrc": "/client_male.png"
+            },
+            {
+                "rating": 4,
+                "quote": "Great experience with DWAO. Their analytics tools helped us optimize our site effectively. Highly skilled team!",
+                "name": "Amit Patel",
+                "title": "Marketing Director - Innovate Solutions",
+                "imageSrc": "/client_male.png"
+            },
+            {
+                "rating": 5,
+                "quote": "Outstanding service! DWAO's CRO strategies boosted our conversion rates significantly. A pleasure to work with!",
+                "name": "Sneha Kapoor",
+                "title": "E-commerce Manager - RetailWorld",
+                "imageSrc": "/client_male.png"
+            },
+            {
+                "rating": 5,
+                "quote": "Outstanding service! DWAO's CRO strategies boosted our conversion rates significantly. A pleasure to work with!",
+                "name": "John Doe",
+                "title": "Store Manager - RetailWorld",
+                "imageSrc": "/client_male.png"
+            },
+            {
+                "rating": 5,
+                "quote": "Outstanding service! DWAO's CRO strategies boosted our conversion rates significantly. A pleasure to work with!",
+                "name": "Alice Shown",
+                "title": "Marketing Manager",
+                "imageSrc": "/client_male.png"
+            }
+        ]
+    },
+    "section8": {
+        "details": {
+            "heading": "Interested in learning more about us?",
+            "link": {
+                "linkTitle": "Explore Capabilities",
+                "linkHref": "#"
+            }
+        },
+        "cta": {
+            "heading": "Reach out to us"
+        }
+    }
+}

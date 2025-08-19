@@ -1,0 +1,24 @@
+.content p{
+    margin-bottom: 15px;
+}
+
+.content ul {
+  list-style: none; 
+}
+
+.content ul li {
+  position: relative;
+  padding-left: 1.75rem;
+}
+
+.content ul li::before {
+  content: '';
+  position: absolute;
+  top: 0.2em;
+  left: 0;
+  width: 1.4rem;
+  height: 1.2rem;
+  background-image: url('/dv360/icons/tickMark.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}

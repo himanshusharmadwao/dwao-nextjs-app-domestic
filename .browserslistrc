@@ -1,0 +1,20 @@
+# Target modern browsers to reduce polyfills
+# This reduces the amount of legacy JavaScript polyfills
+
+# Production browsers
+[production]
+chrome >= 90
+edge >= 90
+firefox >= 88
+safari >= 14
+ios >= 14
+not dead
+
+# Development (same as production for consistency)
+[development]
+chrome >= 90
+edge >= 90
+firefox >= 88
+safari >= 14
+ios >= 14
+not dead

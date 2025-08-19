@@ -1,0 +1,70 @@
+/* custom pagination styles */
+
+.customPagi {
+    position: absolute;
+    z-index: 9999;
+    left: calc(50% + 19px)!important;
+    bottom: 12% !important;
+    transform: translateX(-50%);
+    width: 90% !important;
+    max-width: 1200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.customPagi :global(.swiper-pagination-bullet) {
+  height: 0;
+  width: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+  opacity: 1;
+  /* position: relative; */
+}
+
+.customPagi::before {
+  content: "";
+  position: absolute;
+  left: -19px;
+  top: 50%;
+  height: 100%;
+  width: 2px;
+  background: #fff;
+  transform: translateY(-50%);
+}
+
+.customPagi :global(.swiper-pagination-bullet>span) {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.customPagi :global(.swiper-pagination-bullet>span::before) {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  height: 0%;
+  width: 5px;
+  background: #fff;
+  transition: height 0.4s ease-in-out, transform 0.4s ease-in-out;
+  transform: translateY(-50%);
+  will-change: height, transform;
+}
+
+.customPagi :global(.swiper-pagination-bullet-active>span::before) {
+  height: 50px;
+}
+
+@media(max-width: 992px){
+  .customPagi {
+    /* left: 10%!important; */
+  }
+}

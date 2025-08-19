@@ -1,0 +1,380 @@
+{
+    "filterItems": [
+        {
+            "category": "Analytics",
+            "subCategory": [
+                "GA",
+                "Adobe"
+            ]
+        },
+        {
+            "category": "Other",
+            "subCategory": [
+                "DWAO"
+            ]
+        },
+        {
+            "category": "Marketing",
+            "subCategory": [
+                "GMP",
+                "SEO",
+                "Marketing"
+            ]
+        },
+        {
+            "category": "CRO",
+            "subCategory": [
+                "Tools"
+            ]
+        },
+        {
+            "category": "CMS",
+            "subCategory": [
+                "Software"
+            ]
+        },
+        {
+            "category": "Marketing Automation",
+            "subCategory": [
+                "Adobe Campaign"
+            ]
+        }
+    ],
+    "blogPosts": [
+        {
+            "id": 1,
+            "title": "How Performance Marketing Agencies Can Mislead You",
+            "slug": "how-performance-marketing-agencies-can-mislead-you",
+            "category": "Marketing",
+            "subCategory": "Marketing",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                },
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                },
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                },
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                },
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/marketing-agency-meeting.jpg"
+        },
+        {
+            "id": 2,
+            "title": "Top 5 Google Analytics Features You’re Not Using",
+            "slug": "top-5-google-analytics-features-youre-not-using",
+            "category": "Analytics",
+            "subCategory": "GA",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/google-analytics-dashboard.jpg"
+        },
+        {
+            "id": 3,
+            "title": "The Future of CRO: Trends to Watch in 2025",
+            "slug": "the-future-of-cro-trends-to-watch-in-2025",
+            "category": "CRO",
+            "subCategory": "Tools",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/cro-trends.jpg"
+        },
+        {
+            "id": 4,
+            "title": "Why Adobe Campaign is the Best for Marketing Automation",
+            "slug": "why-adobe-campaign-is-the-best-for-marketing-automation",
+            "category": "Marketing Automation",
+            "subCategory": "Adobe Campaign",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/adobe-campaign.jpg"
+        },
+        {
+            "id": 5,
+            "title": "SEO Strategies That Still Work in 2025",
+            "slug": "seo-strategies-that-still-work-in-2025",
+            "category": "Marketing",
+            "subCategory": "SEO",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/seo-strategies.jpg"
+        },
+        {
+            "id": 6,
+            "title": "Choosing the Right CMS for Your Business",
+            "slug": "choosing-the-right-cms-for-your-business",
+            "category": "CMS",
+            "subCategory": "Software",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/cms-selection.jpg"
+        },
+        {
+            "id": 7,
+            "title": "What is DWAO and Why It Matters",
+            "slug": "what-is-dwao-and-why-it-matters",
+            "category": "Other",
+            "subCategory": "DWAO",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/dwao-explained.jpg"
+        },
+        {
+            "id": 8,
+            "title": "Maximizing ROI with GMP: A Beginner’s Guide",
+            "category": "Marketing",
+            "subCategory": "GMP",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/gmp-guide.jpg"
+        },
+        {
+            "id": 9,
+            "title": "Adobe Analytics vs. Google Analytics: Which is Better?",
+            "slug": "maximizing-roi-with-gmp-a-beginners-guide",
+            "category": "Analytics",
+            "subCategory": "Adobe",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/analytics-comparison.jpg"
+        },
+        {
+            "id": 10,
+            "title": "Essential CRO Tools Every Marketer Should Know",
+            "slug": "essential-cro-tools-every-marketer-should-know",
+            "category": "CRO",
+            "subCategory": "Tools",
+            "excerpt": "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+            "featuredImage": "/clevertap-partner-920.webp",
+            "author": {
+                "name": "Prajakta Khamgaonkar",
+                "imgSrc": "/prajakta.jpg"
+            },
+            "content": [
+                {
+                    "heading": "Stop Making Visitors Wait",
+                    "paragraphs": [
+                        "Nobody likes waiting especially online. If your site loads slower than a lazy Sunday morning, visitors will not stick around.",
+                        "Check your speed: Use tools like Google PageSpeed Insights or GTmetrix.",
+                        "What is slowing you down: Oversized images, clunky plugins, and slow hosting.",
+                        "Fix it fast: Compress images, enable caching, switch to a content delivery network (CDN), and upgrade your hosting if needed.",
+                        "Minimize code bloat: Optimize JavaScript and CSS files to ensure they do not slow down loading times.",
+                        "A slow site does not just push visitors away, it tells them you do not value their time."
+                    ]
+                }
+            ],
+            "image": "/images/cro-tools.jpg"
+        }
+    ],
+    "relatedCapabilities": [
+        "Best Tools for Website Personalization",
+        "How to Prove the Value of Marketing Efforts to Stakeholders",
+        "Best Ways to Optimize Marketing Budgets",
+        "How to Align Marketing Goals with Business Objectives?"
+    ],
+    "contact": {
+        "details": {
+            "heading": "Interested in learning more about us?",
+            "link": {
+                "linkTitle": "Explore Capabilities",
+                "linkHref": "#"
+            }
+        },
+        "cta": {
+            "heading": "Reach out to us so we can guide you",
+            "link": {
+                "linkTitle": "Write to us",
+                "linkHref": "#"
+            }
+        }
+    }
+}

@@ -1,0 +1,58 @@
+/* .mySwiper {
+    padding: 20px;
+} */
+
+.mySwiper :global(.swiper-button-prev),
+.mySwiper :global(.swiper-button-next) {
+    padding: 0;
+    cursor: pointer !important;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    z-index: 99;
+    align-items: center;
+    justify-content: center;
+    background: #fff !important;
+    display: flex !important;
+}
+
+.mySwiper :global(.swiper-button-prev) {
+    left: 0;
+}
+
+.mySwiper :global(.swiper-button-next) {
+    right: 0    ;
+}
+
+.mySwiper :global(.swiper-button-prev):after,
+.mySwiper :global(.swiper-button-next):after {
+    color: black;
+    display: inline-block;
+    content: "";
+    background: url('/arrow-left.png') no-repeat center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16px;
+    width: 16px;
+}
+
+.mySwiper :global(.swiper-button-next):after {
+    transform: rotate(180deg);
+}
+
+.mySwiper :global(.swiper-wrapper){
+    margin-bottom: 20px!important;
+}
+
+.mySwiper :global(.swiper-pagination){
+    bottom: 0!important;
+}
+
+@media(min-width: 768px){
+    .mySwiper :global(.swiper-pagination){
+        display: none;
+    }
+}
