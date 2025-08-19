@@ -13,12 +13,14 @@ export const metadata = {
   description: "DWAO offers digital transformation and marketing services, including analytics, CRO, performance marketing, CDP, marketing automation, SEO, and more, helping businesses enhance their online presence, optimize performance, and drive growth."
 };
 
-export default async function RootLayout({ children }) {
+export default async function RootLayout({ children, searchParams }) {
 
   const h = headers();
   const preview = h.get('x-preview') === '1';
 
   const regions = await getRegions(preview);
+
+  console.log("searchParams: ", await searchParams)
 
   return (
     <html lang="en">

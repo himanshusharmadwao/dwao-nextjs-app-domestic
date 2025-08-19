@@ -1,124 +1,151 @@
-import React from 'react';
-import qs from 'qs';
-// import { notFound, redirect } from 'next/navigation';
-import SinglePageWrapper from '@/components/wrapper/single-page';
-import { getCapability } from '@/libs/apis/data/capabilities';
-import StructuredData from '@/components/StructuredData';
-import { getRegions } from '@/libs/apis/data/menu';
-import NotFound from '@/app/not-found';
+// app/[...slug]/page.jsx
+import React from "react";
+import SinglePageWrapper from "@/components/wrapper/single-page";
+import StructuredData from "@/components/StructuredData";
+import NotFound from "@/app/not-found";
+
+import { getCapability } from "@/libs/apis/data/capabilities";
+import { getRegions } from "@/libs/apis/data/menu";
+
+import ServicePage from "@/components/service";
+import { getServiceData } from "@/libs/apis/data/servicePage/service";
 
 export async function generateMetadata({ params, searchParams }) {
-  const resolvedParams = await params;
-  // console.log("Params: ", resolvedParams)
-
   try {
-    const resolvedSearchParams = await searchParams;
-    const preview = resolvedSearchParams?.preview === "true";
-    const capabilityResponse = await getCapability(preview, resolvedParams.slug);
+    const { slug } = params;
+    const preview = (await searchParams)?.preview === "true";
 
+    const serviceResponse = await getServiceData(preview, slug);
+    const capabilityResponse = await getCapability(preview, slug);
 
-    if (!capabilityResponse) {
+    if (serviceResponse.data.length > 0) {
+      const serviceResponse = await getServiceData(preview, slug);
+      const item = serviceResponse?.data?.[0];
+
+      const seo = item?.seo || {};
+
       return {
-        title: "Blog Not Found",
-        description: "The requested capability blog post could not be found.",
+        title: seo?.metaTitle || item?.name,
+        description: seo?.metaDescription || item?.excerpt || "",
+        ...(seo?.keywords && { keywords: seo.keywords.split(",").map(k => k.trim()) }),
+        alternates: {
+          canonical:
+            seo?.canonicalURL ||
+            `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/service/${slug}`,
+        },
+        openGraph: {
+          title: seo?.openGraph?.ogTitle,
+          description: seo?.openGraph?.ogDescription,
+          url: seo?.openGraph?.ogUrl,
+          images: seo?.openGraph?.ogImage
+            ? [
+              {
+                url: seo.openGraph.ogImage.url,
+                width: seo.openGraph.ogImage.width,
+                height: seo.openGraph.ogImage.height,
+                alt: seo.openGraph.ogImage.alternativeText || "DWAO Image",
+              },
+            ]
+            : [],
+          type: seo?.openGraph?.ogType || "website",
+        },
       };
+    } else if (capabilityResponse.data.length > 0) {
+      const capabilityResponse = await getCapability(preview, slug);
+      const item = capabilityResponse?.data?.[0];
+      const seo = item?.seo || {};
+      return {
+        title: seo?.metaTitle || item?.title,
+        description: seo?.metaDescription || "Explore our capabilities and expertise.",
+        ...(seo?.keywords && { keywords: seo.keywords.split(",").map(k => k.trim()) }),
+        alternates: {
+          canonical:
+            seo?.canonicalURL || `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/${slug}`,
+        },
+        openGraph: {
+          title: seo?.openGraph?.ogTitle,
+          description: seo?.openGraph?.ogDescription,
+          url: seo?.openGraph?.ogUrl,
+          images: seo?.openGraph?.ogImage
+            ? [
+              {
+                url: seo.openGraph.ogImage.url,
+                width: seo.openGraph.ogImage.width,
+                height: seo.openGraph.ogImage.height,
+                alt: seo.openGraph.ogImage.alternativeText || "DWAO Image",
+              },
+            ]
+            : [],
+          type: seo?.openGraph?.ogType || "website",
+        },
+      };
+    } else {
+      return { title: "Page Not Found", description: "The requested source could not be found." };
     }
-
-    const seo = capabilityResponse?.data?.[0]?.seo || {};
-
-    return {
-      title: seo?.metaTitle || capabilityResponse?.data?.[0]?.title,
-      description: seo?.metaDescription || "Explore our capabilities and expertise.",
-      ...(seo?.keywords && {
-        keywords: seo?.keywords.split(',').map(keyword => keyword.trim()),
-      }),
-      alternates: {
-        canonical: seo?.canonicalURL ||
-          `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/${resolvedParams.slug}`
-      },
-      openGraph: {
-        title: seo?.openGraph?.ogTitle,
-        description: seo?.openGraph?.ogDescription,
-        url: seo?.openGraph?.ogUrl,
-        images: [
-          {
-            url: seo?.openGraph?.ogImage?.url,
-            width: seo?.openGraph?.ogImage?.width,
-            height: seo?.openGraph?.ogImage?.height,
-            alt: seo?.openGraph?.ogImage?.alternativeText || 'DWAO Image',
-          },
-        ],
-        type: seo?.openGraph?.ogType || 'website'
-      }
-    };
-  } catch (error) {
-    console.error("Error generating metadata:", error);
-    return {
-      title: "Error",
-      description: "An error occurred while loading the blog post.",
-    };
+  } catch (e) {
+    console.error("Error generating metadata:", e);
+    return { title: "Error", description: "An error occurred while loading the page." };
   }
 }
 
-export const loadPage = async (slug) => {
-  const query = qs.stringify({
-    filters: {
-      slug: {
-        $contains: slug
-      }
-    },
-    populate: {
-      Header: {
-        populate: "*" // Populate all components inside the dynamic zone
-      }
-    }
-  }, { encode: false });
-
-  // console.log(query, "query");
-
-  // try {
-  //   const getPageApi = await fetch(`http://localhost:1337/api/pages?${query}`);
-
-  //   if (!getPageApi.ok) {
-  //     console.error(`API responded with status: ${getPageApi.status}`);
-  //     return null;
-  //   }
-
-  //   const page = await getPageApi.json();
-
-  //   if (!page.data || page.data.length === 0) {
-  //     return null;
-  //   }
-
-  //   return page;
-  // } catch (error) {
-  //   console.error("Error fetching page data:", error);
-  //   return null;
-  // }
-};
-
 const DynamicPages = async ({ params, searchParams }) => {
-  const resolvedParams = await params;
-  // console.log("Resolvedparams: ", resolvedParams.slug[0], resolvedParams.slug[1])
-  const resolvedSearchParams = await searchParams;
-  const preview = resolvedSearchParams?.preview === "true"; //exact comparison because of js non-empty string logic
 
-  const capabilityResponse = await getCapability(preview, resolvedParams.slug);
+  const { slug } = params;
+  const preview = (await searchParams)?.preview === "true";
 
-  if (capabilityResponse.status === "error") {
-    return <div className="">Something went wrong!! Please try again later.</div>;
-  } else if (capabilityResponse.status === "not_found") {
+  const serviceResponse = await getServiceData(preview, slug);
+  const capabilityResponse = await getCapability(preview, slug);
+
+  if (serviceResponse.data.length > 0) {
+
+    const { data, error } = serviceResponse || {};
+    if (error) {
+      return (
+        <div className="h-screen block">
+          <h1 className="text-black lg:text-[54px] text-[32px] font-bold text-center flex justify-center items-center h-full">
+            {error}
+          </h1>
+        </div>
+      );
+    }
+
+    const item = data[0];
+
+    return (
+      <>
+        <StructuredData data={item?.seo?.structuredData} />
+        <ServicePage serviceData={item} />
+      </>
+    );
+  } else if (capabilityResponse.data.length > 0) {
+
+    if (capabilityResponse?.status === "error") {
+      return (
+        <div className="h-screen block">
+          <h1 className="text-black lg:text-[54px] text-[32px] font-bold text-center flex justify-center items-center h-full">
+            {error}
+          </h1>
+        </div>
+      );
+    }
+
+    const regions = await getRegions(preview);
+    const pageData = capabilityResponse?.data?.[0];
+    if (!pageData) return <NotFound />;
+
+    return (
+      <>
+        <StructuredData data={pageData?.seo?.structuredData} />
+        <SinglePageWrapper
+          pageData={pageData}
+          relatedCapabilities={capabilityResponse?.related}
+          regions={regions}
+        />
+      </>
+    );
+  } else {
     return <NotFound />;
   }
-
-  const regions = await getRegions();
-
-  return (
-    <>
-      <StructuredData data={capabilityResponse?.data?.[0]?.seo?.structuredData} />
-      <SinglePageWrapper pageData={capabilityResponse?.data[0]} relatedCapabilities={capabilityResponse?.related} regions={regions} />
-    </>
-  );
 };
 
 export default DynamicPages;

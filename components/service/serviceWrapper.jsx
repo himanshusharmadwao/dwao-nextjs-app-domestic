@@ -18,9 +18,6 @@ const ServiceWrapper = ({ serviceData }) => {
 
     // console.log(serviceData)
 
-
-    // console.log(clientSlide);
-
     const heroFormRef = useRef(null);
 
     const handleRequestQuoteClick = () => {

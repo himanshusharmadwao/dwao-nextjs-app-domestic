@@ -32,6 +32,9 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
   const normalizedPath = getNormalizedPath(pathname, regions);
 
   const isHome = normalizedPath === "/";
+  const isContactPage = normalizedPath === "/contact";
+  const isAboutPage = normalizedPath === "/about";
+  const isPolicyPage = normalizedPath === "/privacy-policy";
   const isCulturePage = normalizedPath === "/culture";
   const isBlogPage = normalizedPath === "/blog";
   const isInsightsCaseStudies = normalizedPath === "/insights-and-case-studies";
@@ -74,19 +77,11 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
 
   const handleSelectRegion = (region) => {
 
-    // if (region.slug != "in-en") {
-    //   router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/${region.slug == "default" ? "" : region.slug}/${pathname}`)
-    //   return;
-    // }
-
-    const isBlogForRegion = normalizedPath.includes("/blog");
-    const isInsightsCaseStudiesForRegion = normalizedPath.includes("/insights-and-case-studies");
-
     if (region.slug != "in-en") {
-      if ((isCulturePage || isBlogForRegion || isInsightsCaseStudiesForRegion || isCapability || isPartner) & !isReview) {
-        router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}`);
-      } else {
+      if (isHome || isAboutPage || isContactPage || isPolicyPage || isReview) {
         router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/${region.slug == "default" ? "" : region.slug}${pathname}`)
+      } else {
+        router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}`);
       }
       return;
     }
@@ -231,7 +226,7 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
                 <GoGlobe />
                 <span className="lg:inline-block hidden">India</span>
                 <span className="inline-block lg:hidden">in-en</span>
-                <RxCaretDown size={22}/>
+                <RxCaretDown size={22} />
               </div>
               {/* Dropdown */}
               <div className={`absolute right-[0px] z-50 bg-white w-60 overflow-y-auto border border-gray-200 space-y-4 p-6 ${styles.regionList}`}>

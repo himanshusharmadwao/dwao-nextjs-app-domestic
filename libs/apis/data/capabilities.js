@@ -26,11 +26,11 @@ export const getCapability = async (preview = false, slug) => {
     let mainCapability = finalResponse?.data?.[0];
 
     if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
-      return { data: null, error: finalResponse?.error?.message || "Something went wrong", status: "error" };
+      return { data: [], error: finalResponse?.error?.message || "Something went wrong", status: "error" };
     }
 
     if (!finalResponse?.data || finalResponse.data.length === 0) {
-      return { data: null, message: "Not Found", status: "not_found" };
+      return { data: [], message: "Not Found", status: "not_found" };
     }
 
     const categorySlug = mainCapability?.category?.slug;
