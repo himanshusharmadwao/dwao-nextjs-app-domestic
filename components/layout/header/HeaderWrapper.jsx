@@ -83,6 +83,11 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
       } else {
         router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}`);
       }
+      // if ((isCulturePage || isBlogForRegion || isInsightsCaseStudiesForRegion || isCapability || isPartner) & !isReview) {
+      //   router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}`);
+      // } else {
+      //   router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/${region.slug == "default" ? "" : region.slug}${pathname}`)
+      // }
       return;
     }
 

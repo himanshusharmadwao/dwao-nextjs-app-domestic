@@ -50,7 +50,7 @@ const About = async ({ searchParams }) => {
 
     const aboutResponse = await getAboutData(preview);
 
-    console.log("aboutResponse: ", aboutResponse)
+    // console.log("aboutResponse: ", aboutResponse)
 
     const { data, error } = aboutResponse;
 

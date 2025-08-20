@@ -22,15 +22,6 @@ export const getReviews = async (preview = false) => {
 
     let finalResponse = await response.json();
 
-    if (!finalResponse?.data || finalResponse?.data?.length === 0) {
-      url = url.replace(
-        `filters[regions][slug][$eq]=in-en`,
-        `filters[regions][slug][$eq]=default`
-      );
-      response = await fetch(url, { next: { revalidate: getRevalidateTime(preview) } });
-      finalResponse = await response.json();
-    }
-
     if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
       return {
         data: null,

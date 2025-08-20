@@ -65,7 +65,7 @@ const Culture = async ({ searchParams }) => {
             </div>
         )
     }
-    if (!data) {
+    if (Array.isArray(data) && (!data || data.length <= 0)) {
         return (<div className='h-screen block'>
             <h1 className='text-black lg:text-[54px] text-[32px] font-bold text-center flex justify-center items-center h-full'>Data Not Found!</h1>
         </div>)

@@ -23,15 +23,6 @@ export const getHome = async (device = "desktop", preview = false) => {
 
     let finalResponse = await response.json();
 
-    if (!finalResponse?.data || finalResponse?.data?.length === 0) {
-      url = url.replace(
-        `filters[regions][slug][$eq]=in-en`,
-        `filters[regions][slug][$eq]=default`
-      );
-      response = await fetch(url, { next: { revalidate: getRevalidateTime(preview) } });
-      finalResponse = await response.json();
-    }
-
     if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
       return { data: null, error: finalResponse?.error?.message || "Unknown error" };
     }
@@ -58,15 +49,6 @@ export const getClients = async (preview = false) => {
 
     let finalResponse = await response.json();
 
-    if (!finalResponse?.data || finalResponse?.data?.length === 0) {
-      url = url.replace(
-        `filters[regions][slug][$eq]=in-en`,
-        `filters[regions][slug][$eq]=default`
-      );
-      response = await fetch(url, { next: { revalidate: getRevalidateTime(preview) } });
-      finalResponse = await response.json();
-    }
-
     if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
       return { data: null, error: finalResponse?.error?.message || "Unknown error" };
     }
@@ -92,15 +74,6 @@ export const getClientTestimonials = async (preview = false) => {
 
     let finalResponse = await response.json();
 
-    if (!finalResponse?.data || finalResponse?.data?.length === 0) {
-      url = url.replace(
-        `filters[regions][slug][$eq]=in-en`,
-        `filters[regions][slug][$eq]=default`
-      );
-      response = await fetch(url, { next: { revalidate: getRevalidateTime(preview) } });
-      finalResponse = await response.json();
-    }
-
     if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
       return { data: null, error: finalResponse?.error?.message || "Unknown error" };
     }
@@ -125,15 +98,6 @@ export const getJoinTheTeam = async (preview = false) => {
     let response = await fetch(url, { next: { revalidate: getRevalidateTime(preview) } });
 
     let finalResponse = await response.json();
-
-    if (!finalResponse?.data || finalResponse?.data?.length === 0) {
-      url = url.replace(
-        `filters[regions][slug][$eq]=in-en`,
-        `filters[regions][slug][$eq]=default`
-      );
-      response = await fetch(url, { next: { revalidate: getRevalidateTime(preview) } });
-      finalResponse = await response.json();
-    }
 
     if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
       return { data: null, error: finalResponse?.error?.message || "Unknown error" };
