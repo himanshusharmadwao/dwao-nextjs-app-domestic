@@ -8,18 +8,21 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 });
 
 const nextConfig = {
+
+  trailingSlash: true,
+
   staticPageGenerationTimeout: 120,
-  
+
   // Enable build caching
   cacheMaxMemorySize: 0, // Disable in-memory caching, use file system cache
   cacheHandler: undefined, // Use default file system cache
-  
+
   // Target modern browsers to reduce polyfills
   experimental: {
     optimizeCss: true,
     cssChunking: 'strict', // Better CSS chunking strategy
   },
-  
+
   // Turbopack configuration (stable in Next.js 15)
   turbopack: {
     rules: {
@@ -29,7 +32,7 @@ const nextConfig = {
       },
     },
   },
-  
+
   // Compiler options for modern output
   compiler: {
     removeConsole: process.env.NODE_ENV === 'production',
@@ -63,6 +66,12 @@ const nextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
     formats: ['image/webp'],
   },
+
+  // async redirects() {
+  //   return [
+  //     { source: '/blog/:slug(.+)/', destination: '/blog/:slug', permanent: true },
+  //   ];
+  // },
 
   // Configure cache headers for static assets
   async headers() {
@@ -113,7 +122,7 @@ const nextConfig = {
     if (!isServer && !dev) {
       // Optimize runtime chunk
       config.optimization.runtimeChunk = 'single';
-      
+
       config.optimization.splitChunks = {
         chunks: 'all',
         minSize: 20000,
@@ -172,11 +181,11 @@ const nextConfig = {
           }
         },
       };
-      
+
       // Minimize JavaScript
       config.optimization.minimize = true;
     }
-    
+
     return config;
   },
 };

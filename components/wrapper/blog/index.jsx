@@ -19,7 +19,7 @@ const BlogWrapper = async ({preview}) => {
 
     const categoryResponse = await getCategory(preview);
 
-    console.log("categoryResponse: ", categoryResponse)
+    // console.log("categoryResponse: ", categoryResponse)
 
     return (
         <>

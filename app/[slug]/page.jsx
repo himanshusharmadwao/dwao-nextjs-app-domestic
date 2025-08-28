@@ -18,6 +18,8 @@ export async function generateMetadata({ params, searchParams }) {
     const serviceResponse = await getServiceData(preview, slug);
     const capabilityResponse = await getCapability(preview, slug);
 
+    console.log("capabiltityResponse: ", capabilityResponse)
+
     if (serviceResponse.data.length > 0) {
       const serviceResponse = await getServiceData(preview, slug);
       const item = serviceResponse?.data?.[0];

@@ -20,8 +20,6 @@ export default async function RootLayout({ children, searchParams }) {
 
   const regions = await getRegions(preview);
 
-  console.log("searchParams: ", await searchParams)
-
   return (
     <html lang="en">
       <head>

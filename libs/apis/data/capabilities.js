@@ -5,7 +5,8 @@ export const getCapability = async (preview = false, slug) => {
     let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/capabilities?` +
       `populate[0]=thumbnail&populate[1]=featuredImage&populate[2]=category&populate[3]=sub_category` +
       `&populate[4]=section.visual&populate[5]=section.content&populate[6]=seo` +
-      `&populate[7]=seo.openGraph&populate[8]=seo.openGraph.ogImage`;
+      `&populate[7]=seo.openGraph&populate[8]=seo.openGraph.ogImage` +
+      `&filters[category][slug][$ne]=partners`;
 
     if (slug !== undefined) {
       url += `&filters[slug][$eq]=${slug}`;
