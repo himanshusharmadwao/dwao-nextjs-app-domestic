@@ -94,7 +94,7 @@ const HomeWrapper = async ({ isMobile, data, preview }) => {
                         <h2 className="text-start lg:text-center text-head text-con-dark mb-12">{data?.storyHeading}</h2>
                         <div className="flex flex-col lg:flex-row items-center lg:gap-[10px]">
                             <div className="basis-full lg:basis-[65%]">
-                                <h3 className="text-con-dark text-[20px] lg:text-[25px] leading-[40px] mb-6">this is test data</h3>
+                                <h3 className="text-con-dark text-[20px] lg:text-[25px] leading-[40px] mb-6">"{data?.storyQuote}"</h3>
                                 <div className="text-[25px] text-con-dark"><span className="font-bold">{data?.storyName},</span>{data?.storyDesignition}</div>
                             </div>
                             <div className="relative basis-full lg:basis-[35%] mt-10 lg:mt-0">
