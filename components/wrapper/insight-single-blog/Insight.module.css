@@ -1,0 +1,13 @@
+.testimonialStyle h3 {
+    color: var(--text-con-dark);
+    font-size: 3.2rem;
+    line-height: 1.1;
+}
+
+@media(max-width: 992px) {
+    .testimonialStyle h3 {
+        color: var(--text-con-dark);
+        font-size: 1.5rem;
+        line-height: 1.1;
+    }
+}

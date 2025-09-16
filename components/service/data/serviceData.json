@@ -1,0 +1,249 @@
+{
+    "IntroData": [
+        {
+            "icon": "/dv360/icons/chartLine.svg",
+            "title": "Programmatic Advertising",
+            "description": "Access to premium inventory across display, video, audio, and TV through a single interface for maximum campaign efficiency."
+        },
+        {
+            "icon": "/dv360/icons/bullsEye.svg",
+            "title": "Advanced Targeting",
+            "description": "Leverage sophisticated audience targeting capabilities including demographics, interests, and behavior to reach the right people."
+        },
+        {
+            "icon": "/dv360/icons/barChartLine.svg",
+            "title": "Detailed Analytics",
+            "description": "Access comprehensive reporting and analytics to measure performance and optimize campaigns for better ROI."
+        },
+        {
+            "icon": "/dv360/icons/palette.svg",
+            "title": "Creative Tools",
+            "description": "Utilize built-in creative tools to design, adapt, and optimize ad creatives for different platforms and formats."
+        },
+        {
+            "icon": "/dv360/icons/shield.svg",
+            "title": "Brand Safety",
+            "description": "Implement robust brand safety controls to ensure your ads appear in appropriate contexts that align with your brand values."
+        },
+        {
+            "icon": "/dv360/icons/cog.svg",
+            "title": "Automation",
+            "description": "Save time and resources with automated campaign optimization features that improve performance over time."
+        }
+    ],
+    "ServiceData": [
+        {
+            "icon": "/dv360/icons/userPlus.svg",
+            "title": "DV360 Account Access",
+            "description": "Get exclusive access to premium Display & Video 360 accounts with comprehensive setup and configuration tailored to your business needs.",
+            "features": [
+                "Dedicated account setup",
+                "Custom configurations",
+                "Fast account activation"
+            ]
+        },
+        {
+            "icon": "/dv360/icons/chalkBoardTeacher.svg",
+            "title": "DV360 Training",
+            "description": "Comprehensive training programs to help your team master the DV360 platform and maximize your advertising potential.",
+            "features": [
+                "Personalized training sessions",
+                "Platform best practices",
+                "Advanced feature tutorials"
+            ]
+        },
+        {
+            "icon": "/dv360/icons/magic.svg",
+            "title": "Campaign Management",
+            "description": "Expert management of your DV360 campaigns from strategy development to optimization and reporting.",
+            "features": [
+                "Strategic campaign planning",
+                "Ongoing optimization",
+                "Performance reporting"
+            ]
+        },
+        {
+            "icon": "/dv360/icons/headset.svg",
+            "title": "Dedicated Support",
+            "description": "Ongoing technical and strategic support from our team of certified DV360 experts to ensure your success.",
+            "features": [
+                "24/7 technical assistance",
+                "Strategic consultations",
+                "Troubleshooting & solutions"
+            ]
+        }
+    ],
+    "ValueData": [
+        {
+            "icon": "/dv360/icons/bolt.svg",
+            "title": "Fast Implementation",
+            "description": "Get your DV360 account set up and running in record time, with our streamlined onboarding process."
+        },
+        {
+            "icon": "/dv360/icons/dollarSign.svg",
+            "title": "Cost Efficiency",
+            "description": "Maximize your advertising budget with our cost-effective DV360 solutions and transparent pricing model."
+        },
+        {
+            "icon": "/dv360/icons/chartPie.svg",
+            "title": "Performance Focus",
+            "description": "Our data-driven approach ensures your campaigns deliver measurable results aligned with your business objectives."
+        },
+        {
+            "icon": "/dv360/icons/handshake.svg",
+            "title": "Personalized Service",
+            "description": "Enjoy customized solutions and dedicated support tailored to your unique business requirements."
+        },
+        {
+            "icon": "/dv360/icons/lock.svg",
+            "title": "Data Security",
+            "description": "Your data and account information are protected with enterprise-grade security measures and best practices."
+        },
+        {
+            "icon": "/dv360/icons/graduationCap.svg",
+            "title": "Knowledge Transfer",
+            "description": "We empower your team with the skills and knowledge needed to leverage DV360 effectively."
+        }
+    ],
+    "StoryData": [
+        {
+            "logo": "/dv360/airtel-logos.png",
+            "metric": "156%",
+            "metricLabel": "ROAS\nIncrease",
+            "title": "Global E-commerce Success",
+            "description": "Leading fashion retailer achieved remarkable growth through targeted programmatic campaigns",
+            "stats": [
+                {
+                    "icon": "/dv360/icons/chartLine-green.svg",
+                    "bgColor": "bg-green-100",
+                    "value": "42% Reduction",
+                    "label": "in acquisition costs"
+                },
+                {
+                    "icon": "/dv360/icons/users.svg",
+                    "bgColor": "bg-blue-100",
+                    "value": "2.1M+ Reach",
+                    "label": "new customers reached"
+                },
+                {
+                    "icon": "/dv360/icons/shoppingCart-purple.svg",
+                    "bgColor": "bg-purple-100",
+                    "value": "89% Growth",
+                    "label": "conversion rate improvement"
+                }
+            ],
+            "caseStudyLink": "#"
+        },
+        {
+            "logo": "/dv360/Croma.png",
+            "metric": "300%",
+            "metricLabel": "Lead\nGeneration",
+            "title": "B2B Tech Revolution",
+            "description": "SaaS platform transforms lead generation through advanced DV360 strategies",
+            "stats": [
+                {
+                    "icon": "/dv360/icons/bullsEye-green.svg",
+                    "bgColor": "bg-green-100",
+                    "value": "45% Lower CPL",
+                    "label": "cost per lead reduction"
+                },
+                {
+                    "icon": "/dv360/icons/star.svg",
+                    "bgColor": "bg-blue-100",
+                    "value": "85% Quality",
+                    "label": "lead quality improvement"
+                },
+                {
+                    "icon": "/dv360/icons/handshake-purple.svg",
+                    "bgColor": "bg-purple-100",
+                    "value": "92% Satisfaction",
+                    "label": "client satisfaction rate"
+                }
+            ],
+            "caseStudyLink": "#"
+        },
+        {
+            "logo": "/dv360/faballey-logos-idswWw8pmW.png",
+            "metric": "200%",
+            "metricLabel": "ROI\nImprovement",
+            "title": "Retail Chain Expansion",
+            "description": "National retail brand achieves unprecedented growth with targeted DV360 campaigns",
+            "stats": [
+                {
+                    "icon": "/dv360/icons/store-green.svg",
+                    "bgColor": "bg-green-100",
+                    "value": "125% Visits",
+                    "label": "store visit increase"
+                },
+                {
+                    "icon": "/dv360/icons/chartPie.svg",
+                    "bgColor": "bg-blue-100",
+                    "value": "38% Growth",
+                    "label": "market share increase"
+                },
+                {
+                    "icon": "/dv360/icons/dollarSign-purple.svg",
+                    "bgColor": "bg-purple-100",
+                    "value": "4.5x Revenue",
+                    "label": "revenue multiplication"
+                }
+            ],
+            "caseStudyLink": "#"
+        }
+    ],
+    "TestimonialData": [
+        {
+            "imageSrc": "/dv360/avatar-2.jpg",
+            "name": "Michael Roberts",
+            "title": "Marketing Director, TechCorp",
+            "rating": 5,
+            "quote": "DWAO's DV360 account services transformed our digital advertising strategy. Their expertise helped us reach new audiences and achieve a 45% increase in ROAS within just three months."
+        },
+        {
+            "imageSrc": "/dv360/avatar-5.jpg",
+            "name": "Sarah Johnson",
+            "title": "CMO, Retail Brands Inc.",
+            "rating": 5,
+            "quote": "The team at DWAO provided exceptional support throughout our DV360 implementation. Their training sessions were invaluable, and our team now confidently manages complex programmatic campaigns."
+        },
+        {
+            "imageSrc": "/dv360/avatar-3.jpg",
+            "name": "David Chen",
+            "title": "Digital Director, GlobalMedia",
+            "rating": 5,
+            "quote": "We've worked with several agencies in the past, but DWAO's deep understanding of DV360 and programmatic advertising is unmatched. They've become an essential partner in our marketing strategy."
+        },
+        {
+            "imageSrc": "/dv360/avatar-7.jpg",
+            "name": "Emma Thompson",
+            "title": "Head of Digital, FastGrowth Ltd",
+            "rating": 5,
+            "quote": "The ROI we've seen since partnering with DWAO has been exceptional. Their strategic approach to DV360 campaign management has helped us scale our digital presence significantly."
+        },
+        {
+            "imageSrc": "/dv360/avatar-8.jpg",
+            "name": "James Wilson",
+            "title": "CEO, AdTech Solutions",
+            "rating": 5,
+            "quote": "DWAO's expertise in DV360 has been instrumental in our success. Their team's dedication and innovative approach have helped us achieve outstanding campaign results."
+        }
+    ],
+    "FaqData": [
+        {
+            "question": "What is DV360 and why do I need it?",
+            "answer": "Display & Video 360 (DV360) is Google’s comprehensive programmatic advertising platform that allows you to manage and optimize your digital campaigns across display, video, audio, and TV channels. It provides advanced targeting, reporting, and optimization capabilities that help maximize your advertising ROI."
+        },
+        {
+            "question": "How long does it take to set up a DV360 account?",
+            "answer": "Typically, we can set up and configure your DV360 account within 3-5 business days, depending on your specific requirements and the complexity of your advertising needs. Our streamlined process ensures you can start running campaigns as quickly as possible."
+        },
+        {
+            "question": "What kind of support do you provide after setup?",
+            "answer": "We offer comprehensive ongoing support including technical assistance, strategy consultation, campaign optimization, and regular performance reviews. Our team is available to address any questions or issues you may encounter, ensuring your campaigns run smoothly and effectively."
+        },
+        {
+            "question": "Do you offer training for our team?",
+            "answer": "Yes, we provide customized training programs designed to help your team become proficient with the DV360 platform. Our training covers everything from basic navigation to advanced campaign strategies, ensuring your team can effectively manage and optimize your advertising initiatives."
+        }
+    ]
+}

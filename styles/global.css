@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+/* Custom fonts */
+/* @font-face {
+  font-family: 'helveticaneuebold';
+  src: url('/fonts/helveticaneue_bold-webfont.woff2') format('woff2'),
+    url('/fonts/helveticaneue_bold-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'linik_sansregular';
+  src: url('/fonts/liniksans-regular-webfont.woff2') format('woff2'),
+    url('/fonts/liniksans-regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'linik_sansbold';
+  src: url('/fonts/liniksans-bold-webfont.woff2') format('woff2'),
+    url('/fonts/liniksans-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'linik_sanslight';
+  src: url('/fonts/liniksans-light-webfont.woff2') format('woff2'),
+    url('/fonts/liniksans-light-webfont.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'linik_sansmedium';
+  src: url('/fonts/liniksans-medium-webfont.woff2') format('woff2'),
+    url('/fonts/liniksans-medium-webfont.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+} */
+
+/* https://tailwindcss.com/docs/colors#customizing-your-colors */
+@theme {
+  /* --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono); */
+
+  /* add colors */
+  --text-con: 15px;
+  --text-small-con: 14px;
+  --text-head: 29px;
+  --text-head-large: 3.875rem;
+  --color-con-dark: #333;
+  --color-con-gray: #8b8b8b;
+  --color-con-light: #595959;
+  /* --color-con-gray: #bcbcbc; */
+
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+:root {
+  --mainColor: #4969bb;
+
+  /* --font-helveticaneuebold: 'helveticaneuebold', sans-serif;
+  --font-linik_sansregular: 'linik_sansregular', sans-serif;
+  --font-linik_sansbold: 'linik_sansbold', sans-serif;
+  --font-linik_sanslight: 'linik_sanslight', sans-serif;
+  --font-linik_sansmedium: 'linik_sansmedium', sans-serif; */
+}
+
+.light-bg {
+  background: linear-gradient(to bottom, #f2f1f0 0, #f2f1f0 0, #fff 100%);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* font-family: var(--font-linik_sansregular); */
+  font-family: "Roboto", sans-serif;
+}
+
+@media(max-width: 992px) {
+  :root {
+    --text-head: 19px;
+    --text-head-large: 2rem;
+  }
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}

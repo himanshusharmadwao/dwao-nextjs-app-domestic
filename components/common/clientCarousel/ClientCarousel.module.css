@@ -1,0 +1,3 @@
+.mySwiper :global(.swiper-wrapper) {
+    max-height: 110px !important;
+}

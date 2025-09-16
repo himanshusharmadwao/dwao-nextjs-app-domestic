@@ -1,0 +1,194 @@
+{
+    "aboutCulture": {
+        "subHeading": "About",
+        "heading": "DWAO Culture",
+        "content": "At DWAO, our culture is the foundation of everything we do. We believe that a positive, inclusive, and collaborative work environment is key to driving innovation and excellence. Our culture is not just a set of values written on a page; it’s lived and breathed by every member of our team. We are proud of the dynamic, supportive, and innovative environment we have created.",
+        "images": [
+            "/culture/culture-img4.webp",
+            "/culture/culture-img2.webp",
+            "/culture/culture-img3.webp",
+            "/culture/culture-img1.webp",
+            "/culture/culture-img5.webp"
+        ]
+    },
+    "missionAndValues": {
+        "heading": "Mission & Values",
+        "content": [
+            "Our mission and values are more than just words—they are the driving forces behind our success and the principles that guide us in everything we do.",
+            "Our mission is to empower businesses with innovative martech tools and services that drive growth and maximize customer engagement. We are dedicated to delivering customized, data-driven solutions that provide actionable insights and measurable results. Our goal is to be a trusted partner in our client's success, continually enhancing their marketing capabilities through excellence, expertise, and a commitment to their unique needs.",
+            "Our vision is to be the top martech service provider, known for innovation and customer focused solutions. We want to transform marketing by helping businesses connect with their audiences better and more efficiently. By consistently delivering quality, creativity, and honesty, we aim to lead the future of marketing technology and help our clients succeed in a constantly changing digital world."
+        ],
+        "imgSrc": "/culture/mission_right.webp",
+        "link": {
+            "linkTitle": "Know More",
+            "linkHref": "#"
+        }
+    },
+    "employeeBenefits": {
+        "heading": "Employees Benefits & Perks",
+        "benefits": [
+            {
+                "imgSrc": "/culture/conductive-environment.png",
+                "title": "Conductive Environment",
+                "desc": "We foster a conductive environment that encourages innovation, collaboration, and growth. Our workplace is designed to support and inspire our team, providing the resources and flexibility needed to thrive. By prioritizing a culture of respect and inclusivity, we ensure every employee feels valued and empowered to contribute their best."
+            },
+            {
+                "imgSrc": "/culture/medical-insurance.png",
+                "title": "Medical Insurance",
+                "desc": "We understand the importance of health and wellness for our employees, which is why we offer top tier medical insurance coverage. With our medical insurance, accessing healthcare services becomes seamless – from booking appointments with trusted doctors to managing medical records, all at your fingertips."
+            },
+            {
+                "imgSrc": "/culture/flexible-hours-&-vacations.png",
+                "title": "Work From Home",
+                "desc": "We believe in the power of flexibility and the freedom to work from home. Our remote working culture empowers our team to deliver exceptional results while maintaining a healthy work-life balance. We create an environment where our employees can excel both professionally and personally, providing them with the support and flexibility they need."
+            },
+            {
+                "imgSrc": "/culture/work-from-home.png",
+                "title": "Trainings & Certifications",
+                "desc": "We trust in the continuous growth and development of our team. Our comprehensive On-the-Job Trainings are designed to equip employees with the practical skills and knowledge necessary to excel in their roles. Through hands-on experience and real-time guidance from seasoned professionals, our team members quickly become proficient and confident in their work."
+            }
+        ]
+    },
+    "employeeTestimonials": {
+        "heading": "Employee Testimonials",
+        "testimonials": [
+            {
+                "rating": 5,
+                "quote": "I have been with DWAO for over five years, and it’s been an amazing experience. The company’s commitment to work-life balance, employee wellness, and professional growth is unparalleled. The leadership team is approachable and always open to new ideas, making it an inspiring place to work. I’m proud to be part of a company that values its employees and encourages innovation.",
+                "name": "Piyush Agrawal",
+                "title": "Director",
+                "imageSrc": "/culture/piyush.webp"
+            },
+            {
+                "rating": 5,
+                "quote": "DWAO is a fantastic place to grow your career. The company genuinely invests in its employees’ professional development through regular training and mentoring programs. I have had the chance to lead diverse projects that have challenged me and helped me develop new skills. The inclusive culture and strong team spirit make coming to work every day a pleasure.",
+                "name": "Sharad Chandel",
+                "title": "Senior Associate",
+                "imageSrc": "/culture/sharad.webp"
+            },
+            {
+                "rating": 5,
+                "quote": "Working at DWAO has been an incredible journey. The collaborative environment here fosters innovation and continuous learning. I have had the opportunity to work on cutting-edge projects and grow my skills alongside some of the brightest minds in the industry. The support from leadership and the camaraderie among team members make it a truly rewarding place to work.",
+                "name": "Ishu Jain",
+                "title": "Manager",
+                "imageSrc": "/culture/ishu.webp"
+            },
+            {
+                "rating": 5,
+                "quote": "At DWAO, I’ve found a workplace that values both professional and personal growth. Career advancement opportunities are abundant, and the team-oriented approach ensures everyone’s contributions are recognized and valued. The company’s dedication to staying at the forefront of technology makes each day exciting and challenging.",
+                "name": "Garima Kashyap",
+                "title": "Senior Manager",
+                "imageSrc": "/culture/garima.webp"
+            },
+            {
+                "rating": 5,
+                "quote": "At DWAO, our people are our greatest asset. We prioritize a supportive and inclusive culture where employees feel valued and empowered. Through comprehensive training, career growth opportunities, and an open-door policy, we ensure our team thrives. I'm proud to be part of a company that truly invests in its employees' well-being and professional development.",
+                "name": "Vijay Pundir",
+                "title": "Associate Director",
+                "imageSrc": "/culture/testimonail-1.webp"
+            },
+            {
+                "rating": 5,
+                "quote": "Working at DWAO has been a transformative experience. The company’s focus on data-driven decision-making and continuous improvement aligns perfectly with my professional goals. The team is incredibly talented and supportive, and there’s always a new challenge to tackle. I appreciate the opportunities for growth and the emphasis on achieving a healthy work-life balance.",
+                "name": "Vikas Chander",
+                "title": "Vice President",
+                "imageSrc": "/culture/testimonail-2.webp"
+            },
+            {
+                "rating": 5,
+                "quote": "The supportive leadership is always open to new ideas, making it easy to implement improvements and drive success. Additionally, DWAO emphasizes work-life balance and professional growth, ensuring that we not only achieve our goals but also maintain our well-being. I’m proud to work for a company that values its employees and is at the forefront of technological advancement.",
+                "name": "Karuna Hazrati",
+                "title": "Senior Manager",
+                "imageSrc": "/culture/testimonail-3.webp"
+            }
+        ]
+    },
+    "teamAndCollaborations": {
+        "heading": "Team & Collaborations",
+        "slides": [
+            "/culture/collab-img1.webp",
+            "/culture/collab-img2.webp",
+            "/culture/collab-img3.webp",
+            "/culture/collab-img4.webp",
+            {
+                "type": "video",
+                "thumbnail": "/culture/collab-img5.webp",
+                "youtubeUrl": "https://www.youtube.com/embed/5dNKE33eq2U?si=HmHHPWlFIDpPOA9o"
+            },
+            {
+                "type": "video",
+                "thumbnail": "/culture/collab-img6.webp",
+                "youtubeUrl": "https://www.youtube.com/embed/SIlvt_qodcE?si=HmHHPWlFIDpPOA9o"
+            }
+        ]
+    },
+    "careerGrowth": {
+        "heading": "Career Growth & Development",
+        "content": [
+            "We believe in investing in our greatest asset - our people. Our commitment to career growth and development ensures that every employee has the opportunity to reach their full potential. Through continuous learning, mentorship programs, and clear career progression paths, we empower our team to achieve personal and professional success."
+        ],
+        "listItems": [
+            "Training",
+            "Learning Opportunities",
+            "Certifications"
+        ],
+        "link": {
+            "linkTitle": "Know More",
+            "linkHref": "#"
+        }
+    },
+    "workLifeBalance": {
+        "subHeading": "Work",
+        "heading": "Life Balance",
+        "content": [
+            "A healthy work-life balance is crucial for the well-being and productivity of our employees. We offer flexible working hours, remote work options, and generous paid time off to ensure our team members can achieve a harmonious blend of personal and professional life. Our commitment to fostering a supportive and balanced work environment enables our employees to thrive both in their careers and personal endeavors."
+        ]
+    },
+    "companyEvents": {
+        "heading": "Company Events & Celebrations",
+        "events": {
+            "annual_meet": [
+                "/culture/event-img1.webp",
+                "/culture/event-img2.webp",
+                "/culture/event-img3.webp",
+                {
+                    "type": "video",
+                    "thumbnail": "/culture/event-img12.webp",
+                    "youtubeUrl": "https://www.youtube.com/embed/D2d2R4BNQG0?si=HmHHPWlFIDpPOA9o"
+                }
+            ],
+            "awards": [
+                "/culture/event-img4.webp",
+                "/culture/event-img5.webp",
+                "/culture/event-img6.webp",
+                "/culture/event-img7.webp"
+            ],
+            "sports_day": [
+                "/culture/event-img8.webp",
+                "/culture/event-img9.webp",
+                "/culture/event-img10.webp",
+                "/culture/event-img11.webp"
+            ]
+        }
+    },
+    "socialResponsibility": {
+        "heading": "Social Responsibility & Impact",
+        "content": ["We actively support initiatives that promote environmental conservation, education, and social equity. Our commitment to social responsibility drives us to create positive impacts through sustainable practices, ethical operations, and community engagement."],
+        "slides": [
+            "/culture/social-img1.webp",
+            "/culture/social-img2.webp",
+            "/culture/social-img3.webp",
+            "/culture/social-img4.webp",
+            "/culture/social-img5.webp",
+            "/culture/social-img6.webp",
+            "/culture/social-img7.webp"
+        ]
+    },
+    "contact": {
+        "heading": "Begin your journey of growth by joining or working with us as part of our family",
+        "link": {
+            "linkTitle": "Contact Us",
+            "linkHref": "#"
+        }
+    }
+}

@@ -1,0 +1,679 @@
+{
+    "filterItems": [
+        {
+            "category": "Case Studies",
+            "subCategory": [
+                "Analytics",
+                "CRO",
+                "SEO",
+                "Media",
+                "Marketing Automation",
+                "GA"
+            ]
+        }
+    ],
+    "caseStudies": [
+        {
+            "category": "Case Studies",
+            "subCategory": "GA",
+            "title": "Axis Max Life Insurance Limited Reduced CAC by ~10% by Maximizing Ad Efficiency",
+            "slug": "axis-max-life-insurance-limited-reduced-cac-by-10-by-maximizing-ad-efficiency",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Case Studies",
+            "subCategory": "SEO",
+            "title": "TechCorp Boosted Organic Traffic by 25% with Advanced SEO Strategies",
+            "slug": "techcorp-boosted-organic-traffic-by-25-with-advanced-seo-strategies",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Case Studies",
+            "subCategory": "Tools",
+            "title": "E-Shop Inc. Increased Conversions by 15% Using CRO Tools",
+            "slug": "e-shop-inc-increased-conversions-by-15-using-cro-tools",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Case Studies",
+            "subCategory": "Media",
+            "title": "Retail Giant Automated Campaigns with Adobe Campaign, Saving 20 Hours Weekly",
+            "slug": "retail-giant-automated-campaigns-with-adobe-campaign-saving-20-hours-weekly",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Case Studies",
+            "subCategory": "GMP",
+            "title": "Startup XYZ Achieved 30% Higher ROI with Google Marketing Platform",
+            "slug": "startup-xyz-achieved-30-higher-roi-with-google-marketing-platform",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Case Studies",
+            "subCategory": "Software",
+            "title": "Media House Streamlined Content with a Custom CMS, Reducing Publish Time by 40%",
+            "slug": "media-house-streamlined-content-with-a-custom-cms-reducing-publish-time-by-40",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Other",
+            "subCategory": "DWAO",
+            "title": "FinTech Firm Leveraged DWAO to Improve Data Workflow by 18%",
+            "slug": "fintech-firm-leveraged-dwao-to-improve-data-workflow-by-18",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Analytics",
+            "subCategory": "Adobe",
+            "title": "Global Brand Enhanced Insights with Adobe Analytics, Improving Retention by 12%",
+            "slug": "global-brand-enhanced-insights-with-adobe-analytics-improving-retention-by-12",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "Marketing",
+            "subCategory": "Marketing",
+            "title": "HealthCo Reduced Ad Spend by 8% While Doubling Lead Generation",
+            "slug": "healthco-reduced-ad-spend-by-8-while-doubling-lead-generation",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        },
+        {
+            "category": "CRO",
+            "subCategory": "Tools",
+            "title": "SaaS Provider Optimized Landing Pages, Boosting Sign-Ups by 22%",
+            "slug": "saas-provider-optimized-landing-pages-boosting-sign-ups-by-22",
+            "featuredImage": "/insights-header.webp",
+            "content": {
+                "stats": {
+                    "industry": "BFSI",
+                    "location": "India",
+                    "solutions": [
+                        "Big Query",
+                        "Google Analytics 4",
+                        "Google Ads",
+                        "Meta Ads"
+                    ],
+                    "results": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)",
+                        "Built a robust & futuristic customer-centric capability"
+                    ]
+                },
+                "backgroundData": {
+                    "title": "Background",
+                    "heading": "Axis Max Life Insurance, A leading life insurance company in India",
+                    "description": "Axis Max Life Insurance Limited is an Indian life insurance company based in New Delhi and is the largest private-sector life insurer in India that is not affiliated with a bank."
+                },
+                "brandImage": "/Axis-maxlife-insurance-case-study.webp",
+                "objectiveData": {
+                    "title": "Objective",
+                    "heading": "Reduction in Customer Acquisition Costs (CAC)",
+                    "description": "Axis Max Life Insurance Limited faced rising Customer Acquisition Costs (CAC) due to inefficient ad targeting and tracking limitations. Browser restrictions, privacy regulations, and iOS updates reduced tracking and retargeting capabilities, shrinking their reach. Client-side pixels led to incomplete data, poor attribution, and lower Event Match Quality (EMQ)."
+                },
+                "solutionData": {
+                    "title": "Solution",
+                    "heading": "Transitioned from client-side pixel tracking to server-side tracking",
+                    "description": [
+                        "Transitioned from client-side pixel tracking to server-side tracking via Conversions API (CAPI) using GCP, ensuring resilience against browser restrictions and improving data accuracy.",
+                        "Integrated hashed user identifiers (emails, phone numbers etc) to protect PII, ensuring compliance with GDPR while maintaining trust and data security.",
+                        "Enriched events with high-quality identifiers and contextual data to boost EMQ. Monitored EMQ scores and campaign metrics in real-time to ensure optimal results"
+                    ]
+                },
+                "tagline": "Axis Max Life Insurance Limited & DWAO Collaboration Achieves 10% increase in their Term & Savings business",
+                "resultData": {
+                    "title": "Result",
+                    "heading": "~10% absolute reduction in CAC",
+                    "description": [
+                        "~10% absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach).",
+                        "Transitioned from device/cookie-based identification to user-based identification & built future-proof solution.",
+                        "Developed a capability that is compliant with PII regulations."
+                    ]
+                },
+                "testimonial": {
+                    "content": ["The implementation of server-side tracking has been a game changer for our marketing strategy, enhancing data accuracy, ensuring compliance, and driving greater efficiency. By reducing customer acquisition costs for our Term & Savings business and optimizing campaign performance, we’ve been able to expand our reach and engage with our audience more meaningfully. This data-driven transformation has reinforced our brand’s commitment to innovation and customer-centricity, delivering measurable success in our marketing efforts"],
+                    "name": "Vaibhav Kumar",
+                    "designition": "SVP & Head – Ecommerce, AMLI"
+                },
+                "absoluteStat": {
+                    "percentage": "10%",
+                    "description": "Absolute reduction in CAC (Customer Acquisition Cost) (compare to the traditional client side approach)"
+                }
+            }
+        }
+    ],
+    "relatedCaseStudies": [
+        {
+            "imageSrc": "/featured-thumb-lenskart.webp",
+            "title": "How DWAO helped Reliance Mutual Fund increase their data accuracy beyond 95%",
+            "description": "DWAO helped Reliance Mutual Fund in setting up an accurate measurement platform to understand customer behavior and execution of optimization roadmap across their digital properties.",
+            "href": "/insight-single-blog"
+        },
+        {
+            "imageSrc": "/featured-thumb-lenskart.webp",
+            "title": "How DWAO improved Another Brand's digital efficiency",
+            "description": "DWAO assisted Another Brand in optimizing their digital strategies with enhanced data insights.",
+            "href": "/insight-single-blog"
+        },
+        {
+            "imageSrc": "/featured-thumb-lenskart.webp",
+            "title": "How DWAO boosted Third Brand's performance",
+            "description": "DWAO provided Third Brand with advanced analytics solutions to boost their digital presence.",
+            "href": "/insight-single-blog"
+        },
+        {
+            "imageSrc": "/featured-thumb-lenskart.webp",
+            "title": "How DWAO enhanced Fourth Brand's metrics",
+            "description": "DWAO helped Fourth Brand achieve better results through data-driven optimization.",
+            "href": "/insight-single-blog"
+        }
+    ],
+    "contact": {
+        "details": {
+            "heading": "Interested in learning more about us?",
+            "link": {
+                "linkTitle": "Explore Capabilities",
+                "linkHref": "#"
+            }
+        },
+        "cta": {
+            "heading": "Reach out to us so we can guide you",
+            "link": {
+                "linkTitle": "Write to us",
+                "linkHref": "#"
+            }
+        }
+    }
+}
