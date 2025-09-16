@@ -30,7 +30,13 @@ const ImgCarousel = ({ slides, resConf, slider }) => {
   const [videoUrl, setVideoUrl] = useState(null);
   const swiperRef = useRef(null);
 
-  if (!slides?.length) return <ImgCarouselFallback />;
+  // if (!slides?.length) return <ImgCarouselFallback />;
+
+  const items = Array.isArray(slides) ? slides : [];
+
+  if (!items.length) {
+    return <ImgCarouselFallback />;
+  }
 
   return (
     <div className="relative">
@@ -49,7 +55,7 @@ const ImgCarousel = ({ slides, resConf, slider }) => {
         }}
         onSwiper={(swiper) => (swiperRef.current = swiper)}
       >
-        {slides.map((item, index) => (
+        {slides?.map((item, index) => (
           <SwiperSlide key={index}>
             {item.type === "video" ? (
               <div
