@@ -38,6 +38,7 @@ const ImgCarousel = ({ slides, resConf, slider }) => {
     return <ImgCarouselFallback />;
   }
 
+
   return (
     <div className="relative">
       <SwiperNoSSR

@@ -32,7 +32,6 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
   const normalizedPath = getNormalizedPath(pathname, regions);
 
   const isHome = normalizedPath === "/";
-  const isContactPage = normalizedPath === "/contact";
   const isAboutPage = normalizedPath === "/about";
   const isPolicyPage = normalizedPath === "/privacy-policy";
   const isCulturePage = normalizedPath === "/culture";
@@ -78,7 +77,7 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
   const handleSelectRegion = (region) => {
 
     if (region.slug != "in-en") {
-      if (isHome || isAboutPage || isContactPage || isPolicyPage || isReview) {
+      if (isHome || isAboutPage || isPolicyPage || isReview) {
         router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/${region.slug == "default" ? "" : region.slug}${pathname}`)
       } else {
         router.push(`${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}`);

@@ -1,17 +1,32 @@
-import React from 'react';
-import qs from 'qs';
+import React from "react";
+import qs from "qs";
 import NotFound from "@/app/not-found.jsx";
-import SinglePageWrapper from '@/components/wrapper/single-page';
-import { getPartner } from '@/libs/apis/data/partners';
-import StructuredData from '@/components/StructuredData';
-import { getRegions } from '@/libs/apis/data/menu';
+import SinglePageWrapper from "@/components/wrapper/single-page";
+import { getPartner } from "@/libs/apis/data/partners";
+import StructuredData from "@/components/StructuredData";
+import { getRegions } from "@/libs/apis/data/menu";
 
+// 🔹 Centralized fetcher
+async function fetchPartnerPageData(params, searchParams) {
+  const { slug } = await params;
+  const resolvedSearchParams = await searchParams;
+  const preview = resolvedSearchParams?.preview === "true";
+
+  const [capabilityResponse, regions] = await Promise.all([
+    getPartner(preview, slug),
+    getRegions(),
+  ]);
+
+  return { slug, preview, capabilityResponse, regions };
+}
+
+// 🔹 Generate dynamic metadata
 export async function generateMetadata({ params, searchParams }) {
   try {
-    const { slug } = await params;
-    const resolvedSearchParams = await searchParams;
-    const preview = resolvedSearchParams?.preview === "true";
-    const capabilityResponse = await getPartner(preview, slug);
+    const { slug, capabilityResponse } = await fetchPartnerPageData(
+      params,
+      searchParams
+    );
 
     if (!capabilityResponse) {
       return {
@@ -21,32 +36,35 @@ export async function generateMetadata({ params, searchParams }) {
     }
 
     const seo = capabilityResponse?.data?.[0]?.seo || {};
-    // console.log("seo: ", seo)
 
     return {
       title: seo?.metaTitle || capabilityResponse?.data?.[0]?.title,
-      description: seo?.metaDescription || "Explore our capabilities and expertise.",
+      description:
+        seo?.metaDescription || "Explore our capabilities and expertise.",
       ...(seo?.keywords && {
-        keywords: seo?.keywords.split(',').map(keyword => keyword.trim()),
+        keywords: seo.keywords.split(",").map((k) => k.trim()),
       }),
       alternates: {
-        canonical: seo?.canonicalURL ||
-          `${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/partners/${slug}`
+        canonical:
+          seo?.canonicalURL ||
+          `${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/partners/${slug}`,
       },
       openGraph: {
         title: seo?.openGraph?.ogTitle,
         description: seo?.openGraph?.ogDescription,
         url: seo?.openGraph?.ogUrl,
-        images: [
-          {
-            url: seo?.openGraph?.ogImage?.url,
-            width: seo?.openGraph?.ogImage?.width,
-            height: seo?.openGraph?.ogImage?.height,
-            alt: seo?.openGraph?.ogImage?.alternativeText || 'DWAO Image',
-          },
-        ],
-        type: seo?.openGraph?.ogType || 'website'
-      }
+        images: seo?.openGraph?.ogImage
+          ? [
+              {
+                url: seo.openGraph.ogImage.url,
+                width: seo.openGraph.ogImage.width,
+                height: seo.openGraph.ogImage.height,
+                alt: seo.openGraph.ogImage.alternativeText || "DWAO Image",
+              },
+            ]
+          : [],
+        type: seo?.openGraph?.ogType || "website",
+      },
     };
   } catch (error) {
     console.error("Error generating metadata:", error);
@@ -57,60 +75,28 @@ export async function generateMetadata({ params, searchParams }) {
   }
 }
 
-export const loadPage = async (slug) => {
-  const query = qs.stringify({
-    filters: {
-      slug: {
-        $contains: slug
-      }
-    },
-    populate: {
-      Header: {
-        populate: "*" // Populate all components inside the dynamic zone
-      }
-    }
-  }, { encode: false });
-
-  // console.log(query, "query");
-
-  // try {
-  //   const getPageApi = await fetch(`http://localhost:1337/api/pages?${query}`);
-
-  //   if (!getPageApi.ok) {
-  //     console.error(`API responded with status: ${getPageApi.status}`);
-  //     return null;
-  //   }
-
-  //   const page = await getPageApi.json();
-
-  //   if (!page.data || page.data.length === 0) {
-  //     return null;
-  //   }
-
-  //   return page;
-  // } catch (error) {
-  //   console.error("Error fetching page data:", error);
-  //   return null;
-  // }
-};
-
+// 🔹 Page renderer
 const DynamicPages = async ({ params, searchParams }) => {
+  const { capabilityResponse, regions } = await fetchPartnerPageData(
+    params,
+    searchParams
+  );
 
-  const { slug } = await params;
-  const resolvedSearchParams = await searchParams;
-  const preview = resolvedSearchParams?.preview === "true"; //exact comparison because of js non-empty string logic
-  const capabilityResponse = await getPartner(preview, slug);
-
-  if (capabilityResponse.data == null) {
+  if (!capabilityResponse?.data) {
     return <NotFound />;
   }
 
-  const regions = await getRegions()
-
   return (
     <>
-      <StructuredData data={capabilityResponse?.data?.[0]?.seo?.structuredData} />
-      <SinglePageWrapper pageData={capabilityResponse?.data[0]} relatedCapabilities={capabilityResponse?.related} regions={regions} type="partners" />
+      <StructuredData
+        data={capabilityResponse?.data?.[0]?.seo?.structuredData}
+      />
+      <SinglePageWrapper
+        pageData={capabilityResponse.data[0]}
+        relatedCapabilities={capabilityResponse.related}
+        regions={regions}
+        type="partners"
+      />
     </>
   );
 };

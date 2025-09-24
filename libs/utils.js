@@ -170,6 +170,61 @@ export function getRevalidateTime(preview) {
   return preview ? 0 : REVALIDATE_TIME;
 }
 
+// Debug wrapper for fetch calls to track API response sizes
+export const debugFetch = async (url, options = {}) => {
+  const isDebug = process.env.NEXT_PUBLIC_DEBUG_API === 'true';
+
+  try {
+    const startTime = Date.now();
+    const response = await fetch(url, options);
+    const responseTime = Date.now() - startTime;
+
+    if (isDebug) {
+      // Clone the response to read it without consuming the original
+      const clonedResponse = response.clone();
+      const responseText = await clonedResponse.text();
+      const responseSize = new Blob([responseText]).size;
+      const responseSizeKB = (responseSize / 1024).toFixed(2);
+
+      // Extract just the endpoint from the URL
+      const urlObj = new URL(url);
+      const endpoint = urlObj.pathname + urlObj.search;
+
+      // Simple one-line log with key info
+      let logMessage = `API: ${endpoint} | ${response.status} | ${responseTime}ms | ${responseSizeKB} KB`;
+
+      // Add warning indicators for size issues
+      if (responseSize > 2 * 1024 * 1024) { // > 2MB - Next.js cache limit
+        console.error(`❌ ${logMessage} | EXCEEDS CACHE LIMIT!`);
+      } else if (responseSize > 1024 * 1024) { // > 1MB
+        console.warn(`⚠️ ${logMessage} | LARGE RESPONSE`);
+      } else {
+        console.log(`🌐 ${logMessage}`);
+      }
+    }
+
+    return response;
+  } catch (error) {
+    if (isDebug) {
+      console.error('❌ FETCH ERROR:', url, error.message);
+    }
+    throw error;
+  }
+};
+
+// Cache logging helper functions
+export const logCacheHit = (functionName, ...args) => {
+  if (process.env.NEXT_PUBLIC_DEBUG_API === 'true') {
+    console.log(`💾 Cache HIT: ${functionName}(${args.join(', ')})`);
+  }
+};
+
+export const logCacheMiss = (functionName, ...args) => {
+  if (process.env.NEXT_PUBLIC_DEBUG_API === 'true') {
+    console.log(`🔄 Cache MISS: ${functionName}(${args.join(', ')})`);
+  }
+};
+
 // for removing the regional path from url
 export const getNormalizedPath = (pathname, regions) => {
   const parts = pathname.split('/').filter(Boolean);

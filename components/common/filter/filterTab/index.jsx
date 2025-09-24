@@ -14,7 +14,7 @@ const FilterTab = ({ data, onFilterSelect }) => {
             onMouseLeave={() => setIsHovered(false)}
         >
             {/* Button */}
-            <button className="outline-none border-none rounded-[30px] bg-[#e0e6f7] flex gap-2 items-center justify-center py-[7px] px-[20px] text-[18px] cursor-pointer">
+            <button className="outline-none border-none rounded-[30px] bg-[#e0e6f7] flex gap-2 items-center justify-center py-[7px] px-[20px] text-[18px] text-nowrap cursor-pointer">
                 <span>{data.name}</span>
                 <span>
                     <Image src="/icons/caret-down.svg" height={25} width={25} alt="missing image" />
