@@ -2,11 +2,16 @@ import StructuredData from "@/components/StructuredData";
 import ContactWrapper from "@/components/wrapper/contact";
 import { getContact } from "@/libs/apis/data/contact";
 
+// 🔹 Shared fetcher
+async function fetchContactData(searchParams) {
+  const preview = (await searchParams)?.preview === "true";
+  const contactResponse = await getContact(preview);
+  return { contactResponse, preview };
+}
+
 // 🔹 Generate dynamic metadata
 export async function generateMetadata({ searchParams }) {
-  const preview = (await searchParams)?.preview === "true";
-
-  const contactResponse = await getContact(preview);
+  const { contactResponse } = await fetchContactData(searchParams);
 
   if (!contactResponse) {
     return {
@@ -21,7 +26,7 @@ export async function generateMetadata({ searchParams }) {
     title: seo?.metaTitle || contactResponse?.data?.[0]?.title,
     description: seo?.metaDescription || contactResponse?.data?.[0]?.excerpt,
     ...(seo?.keywords && {
-      keywords: seo.keywords.split(",").map(keyword => keyword.trim()),
+      keywords: seo.keywords.split(",").map((k) => k.trim()),
     }),
     alternates: {
       canonical:
@@ -49,10 +54,8 @@ export async function generateMetadata({ searchParams }) {
 
 // 🔹 Page renderer
 const Contact = async ({ searchParams }) => {
-  const preview = (await searchParams)?.preview === "true";
-
-  const contactResponse = await getContact(preview);
-  const { data, error } = contactResponse;
+  const { contactResponse, preview } = await fetchContactData(searchParams);
+  const { data, error } = contactResponse || {};
 
   if (error) {
     return (

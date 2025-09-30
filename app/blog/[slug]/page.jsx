@@ -3,12 +3,18 @@ import StructuredData from "@/components/StructuredData";
 import SingleBlogWrapper from "@/components/wrapper/single-blog";
 import { getBlog } from "@/libs/apis/data/blog";
 
-// 🔹 Generate dynamic metadata
-export async function generateMetadata({ params, searchParams }) {
+// 🔹 Shared fetcher
+async function fetchBlogData(params, searchParams) {
   const resolvedParams = await params;
   const preview = (await searchParams)?.preview === "true";
 
   const blogsResponse = await getBlog(preview, resolvedParams.slug);
+  return { blogsResponse, resolvedParams, preview };
+}
+
+// 🔹 Generate dynamic metadata
+export async function generateMetadata({ params, searchParams }) {
+  const { blogsResponse, resolvedParams } = await fetchBlogData(params, searchParams);
 
   if (!blogsResponse) {
     return {
@@ -23,7 +29,7 @@ export async function generateMetadata({ params, searchParams }) {
     title: seo?.metaTitle || blogsResponse?.data?.[0]?.title,
     description: seo?.metaDescription || blogsResponse?.data?.[0]?.excerpt,
     ...(seo?.keywords && {
-      keywords: seo.keywords.split(",").map(keyword => keyword.trim()),
+      keywords: seo.keywords.split(",").map((k) => k.trim()),
     }),
     alternates: {
       canonical:
@@ -51,10 +57,7 @@ export async function generateMetadata({ params, searchParams }) {
 
 // 🔹 Page renderer
 const SingleBlog = async ({ params, searchParams }) => {
-  const resolvedParams = await params;
-  const preview = (await searchParams)?.preview === "true";
-
-  const blogsResponse = await getBlog(preview, resolvedParams.slug);
+  const { blogsResponse, preview } = await fetchBlogData(params, searchParams);
 
   if (blogsResponse?.status === "error") {
     return (

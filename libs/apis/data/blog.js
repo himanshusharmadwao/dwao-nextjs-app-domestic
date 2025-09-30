@@ -104,11 +104,11 @@ export const getBlog = async (preview = false, slug) => {
       let related = [];
 
       if (categorySlug) {
-        let relatedUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/blogs?` +
-          `populate[0]=category&populate[1]=sub_category&populate[2]=author&populate[3]=author.image` +
-          `&populate[4]=seo&populate[5]=seo.openGraph&populate[6]=seo.openGraph.ogImage` +
-          `&populate[7]=thumbnail&populate[8]=featuredImage` +
-          `&filters[slug][$ne]=${slug}&filters[category][slug][$eq]=${categorySlug}` +
+          let relatedUrl = `${process.env.NEXT_PUBLIC_API_BASE_URL}/blogs?` +
+          `fields[0]=title&fields[1]=slug` +
+          `&pagination[pageSize]=4` +
+          `&filters[slug][$ne]=${slug}` +
+          `&filters[category][slug][$eq]=${categorySlug}` +
           `&filters[regions][slug][$eq]=in-en`;
 
         if (preview) {

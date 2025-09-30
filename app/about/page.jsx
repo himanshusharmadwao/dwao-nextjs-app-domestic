@@ -1,11 +1,18 @@
+import NotFound from "@/app/not-found";
 import StructuredData from "@/components/StructuredData";
 import AboutWrapper from "@/components/wrapper/about";
 import { getAboutData } from "@/libs/apis/data/about";
 
-// 🔹 Generate dynamic metadata
-export async function generateMetadata({ searchParams }) {
+// 🔹 Shared fetcher
+async function fetchAboutData(searchParams) {
   const preview = (await searchParams)?.preview === "true";
   const aboutResponse = await getAboutData(preview);
+  return { aboutResponse, preview };
+}
+
+// 🔹 Generate dynamic metadata
+export async function generateMetadata({ searchParams }) {
+  const { aboutResponse } = await fetchAboutData(searchParams);
 
   if (!aboutResponse) {
     return {
@@ -20,7 +27,7 @@ export async function generateMetadata({ searchParams }) {
     title: seo?.metaTitle || aboutResponse?.data?.[0]?.title,
     description: seo?.metaDescription || aboutResponse?.data?.[0]?.excerpt,
     ...(seo?.keywords && {
-      keywords: seo.keywords.split(",").map(keyword => keyword.trim()),
+      keywords: seo.keywords.split(",").map((k) => k.trim()),
     }),
     alternates: {
       canonical:
@@ -48,8 +55,7 @@ export async function generateMetadata({ searchParams }) {
 
 // 🔹 Page renderer
 const About = async ({ searchParams }) => {
-  const preview = (await searchParams)?.preview === "true";
-  const aboutResponse = await getAboutData(preview);
+  const { aboutResponse, preview } = await fetchAboutData(searchParams);
 
   const { data, error } = aboutResponse || {};
 
