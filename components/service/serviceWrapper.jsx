@@ -14,10 +14,15 @@ import LeadForm from './components/leadForm';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { getImageUrl } from '@/libs/utils';
+import dynamic from 'next/dynamic';
+
+const SafeMarkdownComp = dynamic(() => import('@/components/common/SafeMarkdownComp'), {
+    loading: () => <div className="animate-pulse h-20 bg-gray-100 rounded"></div>
+});
 
 const ServiceWrapper = ({ serviceData }) => {
 
-    // console.log(serviceData)
+    console.log("serviceData: ", serviceData)
 
     const heroFormRef = useRef(null);
 
@@ -144,6 +149,20 @@ const ServiceWrapper = ({ serviceData }) => {
                             >
                                 {serviceData?.section?.[1]?.ctaTitle}
                             </Link>
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* {text block one} */}
+            {serviceData?.textBlockOne && (
+                <section className="py-20 bg-gray-50">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-center text-3xl font-bold text-gray-900 mb-4">{serviceData?.textBlockOne?.title}</h2>
+                        <div className="text-xl text-gray-600 text-center">
+                            <SafeMarkdownComp>
+                                {serviceData?.textBlockOne?.content}
+                            </SafeMarkdownComp>
                         </div>
                     </div>
                 </section>
@@ -278,6 +297,20 @@ const ServiceWrapper = ({ serviceData }) => {
                                     </div>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </section>
+            )}
+
+            {/* {text block two} */}
+            {serviceData?.textBlockTwo && (
+                <section className="py-20 bg-gray-50">
+                    <div className="container mx-auto px-6">
+                        <h2 className="text-center text-3xl font-bold text-gray-900 mb-4">{serviceData?.textBlockTwo?.title}</h2>
+                        <div className="text-xl text-gray-600 text-center">
+                            <SafeMarkdownComp>
+                                {serviceData?.textBlockTwo?.content}
+                            </SafeMarkdownComp>
                         </div>
                     </div>
                 </section>

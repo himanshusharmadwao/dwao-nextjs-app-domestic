@@ -33,7 +33,7 @@ export const getServiceData = async (preview = false, slug) => {
         `&populate[3]=InfoPanel.InfoPanel.keyStats.icon&populate[4]=clientTestimonial.testimonial.image` +
         `&populate[5]=faq&populate[6]=faq.faq&populate[7]=seo&populate[8]=seo.openGraph` +
         `&populate[9]=seo.openGraph.ogImage&populate[10]=clientsSlide&populate[11]=clientsSlide.entity` +
-        `&populate[12]=clientsSlide.entity.logo` +
+        `&populate[12]=clientsSlide.entity.logo&populate[13]=textBlockOne&populate[14]=textBlockTwo&` +
         `&filters[slug][$eq]=${slug}` +
         `&filters[regions][slug][$eq]=in-en`;
 
