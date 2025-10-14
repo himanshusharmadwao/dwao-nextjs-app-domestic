@@ -95,18 +95,37 @@ export function isValidRegion(regionSlug) {
 
 // Generic function cache for API responses
 const functionCache = new Map();
+const CACHE_TTL = 300000; // 5 minutes
 
 // In-flight request tracking to prevent duplicate concurrent requests
 const inFlightRequests = new Map();
 
-export function getCachedApiResult(functionName, ...args) {
-  const key = `${functionName}_${JSON.stringify(args)}`;
-  return functionCache.get(key);
-}
+// export function setCachedApiResult(functionName, result, ...args) {
+//   const key = `${functionName}_${JSON.stringify(args)}`;
+//   functionCache.set(key, result);
+// }
 
 export function setCachedApiResult(functionName, result, ...args) {
   const key = `${functionName}_${JSON.stringify(args)}`;
-  functionCache.set(key, result);
+  functionCache.set(key, { result, timestamp: Date.now() });
+}
+
+// export function getCachedApiResult(functionName, ...args) {
+//   const key = `${functionName}_${JSON.stringify(args)}`;
+//   return functionCache.get(key);
+// }
+
+export function getCachedApiResult(functionName, ...args) {
+  const key = `${functionName}_${JSON.stringify(args)}`;
+  const entry = functionCache.get(key);
+  if (!entry) return null;
+
+  if (Date.now() - entry.timestamp > CACHE_TTL) {
+    functionCache.delete(key);
+    return null;
+  }
+
+  return entry.result;
 }
 
 export function hasCachedApiResult(functionName, ...args) {
