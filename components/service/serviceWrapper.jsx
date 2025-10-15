@@ -14,6 +14,7 @@ import LeadForm from './components/leadForm';
 import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 import { getImageUrl } from '@/libs/utils';
+import styles from './service.module.css'
 import dynamic from 'next/dynamic';
 
 const SafeMarkdownComp = dynamic(() => import('@/components/common/SafeMarkdownComp'), {
@@ -22,7 +23,7 @@ const SafeMarkdownComp = dynamic(() => import('@/components/common/SafeMarkdownC
 
 const ServiceWrapper = ({ serviceData }) => {
 
-    console.log("serviceData: ", serviceData)
+    console.log("service data: ", serviceData)
 
     const heroFormRef = useRef(null);
 
@@ -158,11 +159,43 @@ const ServiceWrapper = ({ serviceData }) => {
             {serviceData?.textBlockOne && (
                 <section className="py-20 bg-gray-50">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-center text-3xl font-bold text-gray-900 mb-4">{serviceData?.textBlockOne?.title}</h2>
-                        <div className="text-xl text-gray-600 text-center">
-                            <SafeMarkdownComp>
-                                {serviceData?.textBlockOne?.content}
-                            </SafeMarkdownComp>
+                        <h2 className="text-center text-3xl font-bold text-gray-900 mb-12">
+                            {serviceData?.textBlockOne?.title}
+                        </h2>
+
+                        <div
+                            className={`grid items-center gap-10 ${serviceData?.textBlockOne?.image?.url
+                                ? "grid-cols-1 md:grid-cols-2"
+                                : "grid-cols-1"
+                                }`}
+                        >
+                            {/* Image (if exists) */}
+                            {serviceData?.textBlockOne?.image?.url && (
+                                <div className="flex justify-center">
+                                    <div className="relative w-full max-w-lg aspect-[4/3]">
+                                        <Image
+                                            src={getImageUrl(serviceData?.textBlockOne?.image)}
+                                            alt={
+                                                serviceData?.textBlockOne?.image?.alternativeText ||
+                                                "Section image"
+                                            }
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                </div>
+                            )}
+
+                            {/* Text block */}
+                            <div
+                                className={`text-lg text-gray-700 leading-relaxed ${!serviceData?.textBlockOne?.image?.url ? "md:col-span-2 text-center" : ""
+                                    }`}
+                            >
+                                <SafeMarkdownComp>
+                                    {serviceData?.textBlockOne?.content}
+                                </SafeMarkdownComp>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -279,14 +312,14 @@ const ServiceWrapper = ({ serviceData }) => {
                                 {serviceData?.faq?.description}
                             </p>
                         </div>
-                        <div className="max-w-4xl mx-auto space-y-6">
+                        <div className={`max-w-4xl mx-auto space-y-6 max-h-[600px] ${styles.faqScrollbar}`}>
                             {serviceData?.faq?.faq?.map((item, index) => (
                                 <div key={index} className="border border-gray-200 rounded-xl overflow-hidden">
                                     <button
-                                        className="w-full bg-gray-50 p-6 flex justify-between items-center"
+                                        className="w-full bg-gray-50 py-2 px-6 flex justify-between items-center"
                                         onClick={() => toggleFAQ(index)}
                                     >
-                                        <h3 className="text-xl font-bold text-gray-900">{item.heading}</h3>
+                                        <h3 className="text-lg font-semibold text-gray-900">{item.heading}</h3>
                                         <Image src="/icons/caret-down.svg" alt="Icon image" height={30} width={30} className="text-gray-600 transition-transform"
                                             style={{ transform: openFAQ === index ? 'rotate(180deg)' : 'rotate(0deg)' }} />
                                     </button>
@@ -302,19 +335,51 @@ const ServiceWrapper = ({ serviceData }) => {
                 </section>
             )}
 
-            {/* {text block two} */}
             {serviceData?.textBlockTwo && (
                 <section className="py-20 bg-gray-50">
                     <div className="container mx-auto px-6">
-                        <h2 className="text-center text-3xl font-bold text-gray-900 mb-4">{serviceData?.textBlockTwo?.title}</h2>
-                        <div className="text-xl text-gray-600 text-center">
-                            <SafeMarkdownComp>
-                                {serviceData?.textBlockTwo?.content}
-                            </SafeMarkdownComp>
+                        <h2 className="text-center text-3xl font-bold text-gray-900 mb-12">
+                            {serviceData?.textBlockTwo?.title}
+                        </h2>
+
+                        <div
+                            className={`grid items-center gap-10 ${serviceData?.textBlockTwo?.image?.url
+                                    ? "grid-cols-1 md:grid-cols-2"
+                                    : "grid-cols-1"
+                                }`}
+                        >
+                            {serviceData?.textBlockTwo?.image?.url && (
+                                <div className="order-1 md:order-2 flex justify-center">
+                                    <div className="relative w-full max-w-lg aspect-[4/3]">
+                                        <Image
+                                            src={getImageUrl(serviceData?.textBlockTwo?.image)}
+                                            alt={
+                                                serviceData?.textBlockTwo?.image?.alternativeText ||
+                                                "Section image"
+                                            }
+                                            fill
+                                            sizes="(max-width: 768px) 100vw, 50vw"
+                                            className="object-cover"
+                                        />
+                                    </div>
+                                </div>
+                            )}
+
+                            <div
+                                className={`text-lg text-gray-700 leading-relaxed ${serviceData?.textBlockTwo?.image?.url
+                                        ? "order-2 md:order-1"
+                                        : "md:col-span-2 text-center"
+                                    }`}
+                            >
+                                <SafeMarkdownComp>
+                                    {serviceData?.textBlockTwo?.content}
+                                </SafeMarkdownComp>
+                            </div>
                         </div>
                     </div>
                 </section>
             )}
+
 
             {/* CTA Section */}
             <section id="cta" className="py-20 bg-gradient-to-r from-[#4A69BB] to-[#6283E5] text-white">

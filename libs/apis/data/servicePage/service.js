@@ -28,12 +28,13 @@ export const getServiceData = async (preview = false, slug) => {
 
     // 3. Create promise for actual API call
     const apiPromise = (async () => {
-      let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/domestic-service-pages?` +
+       let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/domestic-service-pages?` +
         `populate[0]=banner.trustedBrands&populate[1]=section.card.icon&populate[2]=InfoPanel.InfoPanel.logo` +
         `&populate[3]=InfoPanel.InfoPanel.keyStats.icon&populate[4]=clientTestimonial.testimonial.image` +
         `&populate[5]=faq&populate[6]=faq.faq&populate[7]=seo&populate[8]=seo.openGraph` +
         `&populate[9]=seo.openGraph.ogImage&populate[10]=clientsSlide&populate[11]=clientsSlide.entity` +
-        `&populate[12]=clientsSlide.entity.logo&populate[13]=textBlockOne&populate[14]=textBlockTwo&` +
+        `&populate[12]=clientsSlide.entity.logo&populate[13]=textBlockOne&populate[14]=textBlockOne.image` +
+        `&populate[15]=textBlockTwo&populate[16]=textBlockTwo.image&` +
         `&filters[slug][$eq]=${slug}` +
         `&filters[regions][slug][$eq]=in-en`;
 
