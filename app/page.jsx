@@ -48,6 +48,9 @@ export async function generateMetadata({ searchParams }) {
       ],
       type: seo?.openGraph?.ogType || "website",
     },
+    other: {
+      "google-site-verification": "ZnraCz2u59KXHgwJ0BEfTyYqrukOV3TpDB6uUNlUfvM",
+    },
   };
 }
 
