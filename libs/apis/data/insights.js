@@ -11,21 +11,21 @@ import {
 // Fetch Insight Categories (Indian data only, cached)
 export const getInsightCategory = async (preview = false) => {
   try {
-    if (hasCachedApiResult("getInsightCategory", preview, "in-en")) {
-      logCacheHit("getInsightCategory", preview, "in-en");
-      return getCachedApiResult("getInsightCategory", preview, "in-en");
+    if (hasCachedApiResult("getInsightCategory", preview, "default")) {
+      logCacheHit("getInsightCategory", preview, "default");
+      return getCachedApiResult("getInsightCategory", preview, "default");
     }
 
-    if (hasInFlightRequest("getInsightCategory", preview, "in-en")) {
+    if (hasInFlightRequest("getInsightCategory", preview, "default")) {
       console.log("🔀 Reusing in-flight request: getInsightCategory", { preview });
-      return await getInFlightRequest("getInsightCategory", preview, "in-en");
+      return await getInFlightRequest("getInsightCategory", preview, "default");
     }
 
-    logCacheMiss("getInsightCategory", preview, "in-en");
+    logCacheMiss("getInsightCategory", preview, "default");
 
     const apiPromise = (async () => {
       let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/insight-categories?populate=*` +
-        `&filters[regions][slug][$eq]=in-en`;
+        `&filters[regions][slug][$eq]=default`;
 
       if (preview) url += `&status=draft`;
 
@@ -42,16 +42,16 @@ export const getInsightCategory = async (preview = false) => {
         result = { data: finalResponse?.data || null, error: null };
       }
 
-      setCachedApiResult("getInsightCategory", result, preview, "in-en");
+      setCachedApiResult("getInsightCategory", result, preview, "default");
       return result;
     })();
 
-    setInFlightRequest("getInsightCategory", apiPromise, preview, "in-en");
+    setInFlightRequest("getInsightCategory", apiPromise, preview, "default");
     return await apiPromise;
   } catch (error) {
     console.error("Error:", error);
     const errorResult = { data: null, error: error.message || "Something went wrong" };
-    setCachedApiResult("getInsightCategory", errorResult, preview, "in-en");
+    setCachedApiResult("getInsightCategory", errorResult, preview, "default");
     return errorResult;
   }
 };
@@ -171,6 +171,7 @@ export const getAllInsightBlogs = async (
         `populate[category][fields][0]=name&` +
         `populate[sub_category][fields][0]=name&` +
         `populate[regions][fields][0]=slug&` +
+        `filters[regions][slug][$eq]=in-en&` +
         `pagination[page]=${page}&pagination[pageSize]=${pageSize}` +
         `&sort[0]=createdAt:desc`;
 
