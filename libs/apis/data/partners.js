@@ -59,3 +59,44 @@ export const getPartner = async (preview = false, slug = 'partners-india') => {
     throw error;
   }
 };
+
+export const getAllPartners = async (preview = false) => {
+  try {
+    let url =
+      `${process.env.NEXT_PUBLIC_API_BASE_URL}/capabilities?` +
+      `fields[0]=slug&fields[1]=createdAt&fields[2]=updatedAt` +
+      `&filters[category][slug][$eq]=partners` +
+      `&filters[regions][slug][$eq]=in-en`;
+
+    if (preview) {
+      url += `&status=draft`;
+    }
+
+    const response = await fetch(url, {
+      next: { revalidate: getRevalidateTime(preview) },
+    });
+
+    const finalResponse = await response.json();
+
+    if (finalResponse?.error && Object.keys(finalResponse?.error).length > 0) {
+      return {
+        data: [],
+        error: finalResponse?.error?.message || "Something went wrong",
+        status: "error",
+      };
+    }
+
+    if (!finalResponse?.data || finalResponse?.data.length === 0) {
+      return { data: [], message: "Not Found", status: "not_found" };
+    }
+
+    return {
+      data: finalResponse.data,
+      status: "success",
+    };
+
+  } catch (error) {
+    console.error("Error:", error);
+    throw error;
+  }
+};
