@@ -32,15 +32,15 @@ export async function GET() {
     // Static pages
     // ----------------------------
     const staticPages = [
-      "/",
-      "/about",
-      "/partners",
-      "/blog",
-      "/insights-and-case-studies",
-      "/contact-us",
-      "/privacy-policy",
-      "/culture",
-      "/reviews/marketing-automation-team",
+      "",
+      "about",
+      "partners",
+      "blog",
+      "insights-and-case-studies",
+      "contact-us",
+      "privacy-policy",
+      "culture",
+      "reviews/marketing-automation-team",
     ];
 
     const urls = [];
@@ -59,7 +59,7 @@ export async function GET() {
     // ----------------------------
     capabilities.forEach((item) => {
       urls.push({
-        loc: `${BASE_URL}/${item.slug}`,
+        loc: `${BASE_URL}${item.slug}`,
         lastmod: item.updatedAt || item.createdAt || new Date().toISOString(),
         changefreq: "monthly",
         priority: 0.7,
@@ -73,7 +73,7 @@ export async function GET() {
       .filter((item) => item.slug !== "partners-india")
       .forEach((item) => {
         urls.push({
-          loc: `${BASE_URL}/partners/${item.slug}`,
+          loc: `${BASE_URL}partners/${item.slug}`,
           lastmod: item.updatedAt || item.createdAt || new Date().toISOString(),
           changefreq: "monthly",
           priority: 0.7,
@@ -85,7 +85,7 @@ export async function GET() {
     // ----------------------------
     blogs.forEach((blog) => {
       urls.push({
-        loc: `${BASE_URL}/blog/${blog.slug}`,
+        loc: `${BASE_URL}blog/${blog.slug}`,
         lastmod: blog.updatedAt || blog.createdAt,
         changefreq: "weekly",
         priority: 0.6,
@@ -100,7 +100,7 @@ export async function GET() {
       const industrySlug = industry.toLowerCase().replace(/\s+/g, "-");
 
       urls.push({
-        loc: `${BASE_URL}/insights-and-case-studies/${industrySlug}/${item.slug}`,
+        loc: `${BASE_URL}insights-and-case-studies/${industrySlug}/${item.slug}`,
         lastmod: item.updatedAt || item.createdAt,
         changefreq: "monthly",
         priority: 0.6,
@@ -112,7 +112,7 @@ export async function GET() {
     // ----------------------------
     services.forEach((service) => {
       urls.push({
-        loc: `${BASE_URL}/${service.slug}`,
+        loc: `${BASE_URL}${service.slug}`,
         lastmod: service.updatedAt || service.createdAt || new Date().toISOString(),
         changefreq: "monthly",
         priority: 0.75,
