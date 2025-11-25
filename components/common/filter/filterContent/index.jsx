@@ -23,7 +23,7 @@ const FilterContent = ({ data, onFilterSelect }) => {
                     <Image src="/icons/filter.svg" height={20} width={20} alt="missing image" />
                     <h1 className='text-black font-bold text-[22px]'>Filter By:</h1>
                 </div>
-                <div className='flex gap-4 mb-8'>
+                <div className='flex flex-wrap gap-4 mb-8'>
                     <div className="lg:flex hidden gap-4">
                         {data.map((filter, index) => (
                             <FilterTab

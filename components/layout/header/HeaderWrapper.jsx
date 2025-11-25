@@ -137,7 +137,7 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
   const getPageFromUrl = () => {
     if (normalizedPath === '/') return 'home';
     if (normalizedPath === '/about') return 'about';
-    if (normalizedPath.includes('/case-studies')) return 'insights';
+    if (normalizedPath.includes('/insights-and-case-studies')) return 'insights';
     if (normalizedPath.includes('/reviews')) return '';
     if (normalizedPath === '/partners') return '';
     if (isCapability) return 'capability';

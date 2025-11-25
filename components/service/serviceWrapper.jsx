@@ -23,14 +23,37 @@ const SafeMarkdownComp = dynamic(() => import('@/components/common/SafeMarkdownC
 
 const ServiceWrapper = ({ serviceData }) => {
 
-    console.log("service data: ", serviceData)
+    // console.log("service data: ", serviceData)
 
-    const heroFormRef = useRef(null);
+    const heroInputRef = useRef(null);   // focus target for hero form
+    const ctaInputRef = useRef(null);    // focus target for cta form
+    const heroFormRef = useRef(null);    // scroll target form wrapper
+    const ctaFormRef = useRef(null);     // scroll target form wrapper
 
-    const handleRequestQuoteClick = () => {
-        if (heroFormRef.current) {
-            heroFormRef.current.focus();
-        }
+    // scroll helper with 20px offset above element
+    const scrollToElementWithOffset = (el, offset = 240) => {
+        if (!el) return;
+        const rect = el.getBoundingClientRect();
+        const top = window.scrollY + rect.top - offset;
+        window.scrollTo({ top, behavior: 'smooth' });
+    };
+
+    const scrollToHomeForm = () => {
+        // scroll hero form into view with 20px above
+        scrollToElementWithOffset(heroFormRef.current, 240);
+
+        // focus input after a short delay
+        setTimeout(() => {
+            heroInputRef.current?.focus?.();
+        }, 400);
+    };
+
+    const scrollToCtaForm = () => {
+        scrollToElementWithOffset(ctaFormRef.current, 240);
+
+        setTimeout(() => {
+            ctaInputRef.current?.focus?.();
+        }, 400);
     };
 
     // for faq
@@ -70,7 +93,7 @@ const ServiceWrapper = ({ serviceData }) => {
                                     {serviceData?.banner?.description}
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link prefetch={false} href={serviceData?.banner?.primaryBtnHref || '/'}
+                                    {/* <Link prefetch={false} href={serviceData?.banner?.primaryBtnHref || '/'}
                                         className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition text-center font-medium cursor-pointer getStarted"
                                         onClick={handleRequestQuoteClick}
                                     >
@@ -78,7 +101,15 @@ const ServiceWrapper = ({ serviceData }) => {
                                     </Link>
                                     <Link prefetch={false} href={serviceData?.banner?.secondaryBtnHref || '/'} className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition text-center font-medium cursor-pointer">
                                         {serviceData?.banner?.secondaryBtnTitle}
-                                    </Link>
+                                    </Link> */}
+                                    <span className="bg-blue-500 text-white px-8 py-3 rounded-lg hover:bg-blue-600 transition text-center font-medium cursor-pointer getStarted"
+                                        onClick={scrollToHomeForm}
+                                    >
+                                        {serviceData?.banner?.primaryBtnTitle}
+                                    </span>
+                                    <span className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition text-center font-medium cursor-pointer" onClick={scrollToHomeForm}>
+                                        {serviceData?.banner?.secondaryBtnTitle}
+                                    </span>
                                 </div>
                                 <div className="mt-12">
                                     <p className="text-sm text-blue-200 mb-4">{serviceData?.banner?.trustedBrandsText}</p>
@@ -92,7 +123,7 @@ const ServiceWrapper = ({ serviceData }) => {
                                 </div>
                             </div>
                             <div className="lg:w-1/2 mb-12 lg:mb-0">
-                                <LeadForm />
+                                <LeadForm ref={heroFormRef} focusRef={heroInputRef} />
                             </div>
                         </div>
                     </div>
@@ -144,12 +175,17 @@ const ServiceWrapper = ({ serviceData }) => {
                             ))}
                         </div>
                         <div className="mt-12 text-center">
-                            <Link prefetch={false} href={serviceData?.section[1]?.ctaHref || '/'}
+                            {/* <Link prefetch={false} href={serviceData?.section[1]?.ctaHref || '/'}
                                 className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium cursor-pointer getStarted"
                             // onClick={pageMove}
                             >
                                 {serviceData?.section?.[1]?.ctaTitle}
-                            </Link>
+                            </Link> */}
+                            <span className="inline-block bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium cursor-pointer getStarted"
+                                onClick={scrollToHomeForm}
+                            >
+                                {serviceData?.section?.[1]?.ctaTitle}
+                            </span>
                         </div>
                     </div>
                 </section>
@@ -273,9 +309,13 @@ const ServiceWrapper = ({ serviceData }) => {
                             <TestimonialCarousel slides={testimonialSlides} />
                         </div>
                         <div className="mt-12 text-center">
-                            <Link prefetch={false} href={serviceData?.clientTestimonial?.ctaHref || '/'} className="inline-block bg-[#4A69BB] text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium cursor-pointer">
+                            {/* <Link prefetch={false} href={serviceData?.clientTestimonial?.ctaHref || '/'} className="inline-block bg-[#4A69BB] text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium cursor-pointer">
                                 {serviceData?.clientTestimonial?.ctaTitle}
-                            </Link>
+                            </Link>onClick={scrollToHomeForm} */}
+
+                            <span className="inline-block bg-[#4A69BB] text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition font-medium cursor-pointer" onClick={scrollToHomeForm} >
+                                {serviceData?.clientTestimonial?.ctaTitle}
+                            </span>
                         </div>
                     </div>
                 </section>
@@ -344,8 +384,8 @@ const ServiceWrapper = ({ serviceData }) => {
 
                         <div
                             className={`grid items-center gap-10 ${serviceData?.textBlockTwo?.image?.url
-                                    ? "grid-cols-1 md:grid-cols-2"
-                                    : "grid-cols-1"
+                                ? "grid-cols-1 md:grid-cols-2"
+                                : "grid-cols-1"
                                 }`}
                         >
                             {serviceData?.textBlockTwo?.image?.url && (
@@ -367,8 +407,8 @@ const ServiceWrapper = ({ serviceData }) => {
 
                             <div
                                 className={`text-lg text-gray-700 leading-relaxed ${serviceData?.textBlockTwo?.image?.url
-                                        ? "order-2 md:order-1"
-                                        : "md:col-span-2 text-center"
+                                    ? "order-2 md:order-1"
+                                    : "md:col-span-2 text-center"
                                     }`}
                             >
                                 <SafeMarkdownComp>
@@ -404,16 +444,16 @@ const ServiceWrapper = ({ serviceData }) => {
                                     </div>
                                 </div>
                                 <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
-                                    <span className="bg-white text-blue-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition font-medium cursor-pointer">
-                                        Request a Quote
+                                    <span className="bg-white text-blue-900 px-8 py-3 rounded-lg hover:bg-gray-100 transition font-medium cursor-pointer" onClick={scrollToCtaForm}>
+                                        Submit Request
                                     </span>
-                                    <span className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition font-medium cursor-pointer">
+                                    <span className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition font-medium cursor-pointer" onClick={scrollToCtaForm}>
                                         Schedule a Consultation
                                     </span>
                                 </div>
                             </div>
                         </div>
-                        <LeadForm />
+                        <LeadForm ref={ctaFormRef} focusRef={ctaInputRef} />
                     </div>
                 </div>
             </section>

@@ -9,6 +9,7 @@ import { getRegions } from "@/libs/apis/data/menu";
 // 🔹 Centralized fetcher
 async function fetchPartnerPageData(params, searchParams) {
   const { slug } = await params;
+  if(slug === "partners-india") return <NotFound />;
   const resolvedSearchParams = await searchParams;
   const preview = resolvedSearchParams?.preview === "true";
 

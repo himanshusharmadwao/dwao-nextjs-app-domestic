@@ -5,7 +5,7 @@ import CountryCodeSelect from '@/components/service/components/countryCode/Count
 import React, { forwardRef, useState } from 'react';
 import { toast } from 'react-toastify';
 
-const LeadForm = forwardRef((_, ref) => {
+const LeadForm = forwardRef(({ focusRef }, ref) => {
 
   const [loading, setLoading] = useState(false);
   const [formData, setFormData] = useState({
@@ -123,7 +123,7 @@ const LeadForm = forwardRef((_, ref) => {
         <p className="text-blue-100">Fill the form below and our team will contact you shortly</p>
       </div>
       <div className="p-6">
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} ref={ref}>
           <div className="mb-4">
             <label className="block text-gray-700 mb-2">Full Name</label>
             <input
@@ -132,7 +132,7 @@ const LeadForm = forwardRef((_, ref) => {
               id="fullName"
               className="w-full px-4 py-2 border border-[#e4e4e4] text-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 inputName"
               placeholder="John Doe"
-              ref={ref}
+              ref={focusRef} 
               onChange={handleChange}
               value={formData.fullName}
             />

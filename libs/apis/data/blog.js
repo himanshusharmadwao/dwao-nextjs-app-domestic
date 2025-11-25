@@ -10,21 +10,21 @@ import {
 
 export const getCategory = async (preview = false) => {
   try {
-    if (hasCachedApiResult("getCategory", preview, "in-en")) {
-      logCacheHit("getCategory", preview, "in-en");
-      return getCachedApiResult("getCategory", preview, "in-en");
+    if (hasCachedApiResult("getCategory", preview, "default")) {
+      logCacheHit("getCategory", preview, "default");
+      return getCachedApiResult("getCategory", preview, "default");
     }
 
-    if (hasInFlightRequest("getCategory", preview, "in-en")) {
+    if (hasInFlightRequest("getCategory", preview, "default")) {
       console.log("🔀 Reusing in-flight request: getCategory", { preview });
-      return await getInFlightRequest("getCategory", preview, "in-en");
+      return await getInFlightRequest("getCategory", preview, "default");
     }
 
-    logCacheMiss("getCategory", preview, "in-en");
+    logCacheMiss("getCategory", preview, "default");
 
     const apiPromise = (async () => {
       let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/blog-categories?populate=*`;
-      url += `&filters[regions][slug][$eq]=in-en`;
+      url += `&filters[regions][slug][$eq]=default`;
 
       if (preview) {
         url += `&status=draft`;
@@ -43,16 +43,16 @@ export const getCategory = async (preview = false) => {
         result = { data: finalResponse?.data || null, error: null };
       }
 
-      setCachedApiResult("getCategory", result, preview, "in-en");
+      setCachedApiResult("getCategory", result, preview, "default");
       return result;
     })();
 
-    setInFlightRequest("getCategory", apiPromise, preview, "in-en");
+    setInFlightRequest("getCategory", apiPromise, preview, "default");
     return await apiPromise;
   } catch (error) {
     console.error("Error:", error);
     const errorResult = { data: null, error: error.message || "Something went wrong" };
-    setCachedApiResult("getCategory", errorResult, preview, "in-en");
+    setCachedApiResult("getCategory", errorResult, preview, "default");
     return errorResult;
   }
 };

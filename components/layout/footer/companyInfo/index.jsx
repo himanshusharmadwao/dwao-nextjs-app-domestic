@@ -17,8 +17,11 @@ const CompanyInfo = async ({preview}) => {
             >
                 DWAO
             </Link>
-            <p className="text-con text-[var(--color-con-gray)] lg:mt-10 lg:mb-24 my-5">
+            {/* <p className="text-con text-[var(--color-con-gray)] lg:mt-10 lg:mb-24 my-5">
                 {officeResponse?.offices?.find((item, index) => item.city === "Gurugram") ?.address || "Address not found"}
+            </p> */}
+            <p className="text-con text-[var(--color-con-gray)] lg:mt-10 lg:mb-24 my-5">
+                London, Dubai, India and Thailand
             </p>
         </>
     );

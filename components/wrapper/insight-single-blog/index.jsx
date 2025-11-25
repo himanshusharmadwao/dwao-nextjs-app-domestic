@@ -46,7 +46,7 @@ const SingleBlogWrapper = async ({ pageData, relatedInsightBlogs, preview }) => 
                 imageSrc={getImageUrl(card.thumbnail)}
                 title={card.title}
                 description={card.title}
-                href={`/insights-and-case-studies/${card?.stats?.industry?.toLowerCase().replace(/\s+/g, '-')}/${card?.slug}`}
+                href={`/insights-and-case-studies/${card?.slug}`}
             />
         )
     });
