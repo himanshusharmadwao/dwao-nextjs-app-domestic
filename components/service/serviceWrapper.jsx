@@ -107,9 +107,11 @@ const ServiceWrapper = ({ serviceData }) => {
                                     >
                                         {serviceData?.banner?.primaryBtnTitle}
                                     </span>
-                                    <span className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition text-center font-medium cursor-pointer" onClick={scrollToHomeForm}>
-                                        {serviceData?.banner?.secondaryBtnTitle}
-                                    </span>
+                                    {serviceData?.banner?.secondaryBtnHref ? (
+                                        <Link prefetch={false} href={serviceData?.banner?.secondaryBtnHref || '/'} className="bg-transparent border-2 border-white text-white px-8 py-3 rounded-lg hover:bg-white hover:text-blue-900 transition text-center font-medium cursor-pointer">
+                                            {serviceData?.banner?.secondaryBtnTitle}
+                                        </Link>
+                                    ) : null}
                                 </div>
                                 <div className="mt-12">
                                     <p className="text-sm text-blue-200 mb-4">{serviceData?.banner?.trustedBrandsText}</p>

@@ -218,7 +218,7 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
               ))}
             </ul>
 
-            <div ref={regionRef} className={`region relative inline-block text-left text-[15px] z-[99999] ${isRegionOpen ? styles.dropdownOpen : ''}`}
+            <div ref={regionRef} className={`region relative hidden lg:inline-block text-left text-[15px] z-[99999] ${isRegionOpen ? styles.dropdownOpen : ''}`}
               onMouseEnter={() => setIsRegionOpen(true)}
               onMouseLeave={() => setIsRegionOpen(false)}
             >
@@ -228,8 +228,8 @@ const HeaderWrapper = ({ headerData, secMenu, regions }) => {
                 onClick={() => setIsRegionOpen((prev) => !prev)}
               >
                 <GoGlobe />
-                <span className="lg:inline-block hidden">India</span>
-                <span className="inline-block lg:hidden">in-en</span>
+                <span className="">India</span>
+                {/* <span className="inline-block lg:hidden">in-en</span> */}
                 <RxCaretDown size={22} />
               </div>
               {/* Dropdown */}
