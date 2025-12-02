@@ -3,17 +3,18 @@ import ReviewWrapper from "@/components/wrapper/marketing-automation-team";
 import { getReviews } from "@/libs/apis/data/reviews";
 
 // 🔹 Centralized fetcher
-async function fetchReviewData(searchParams) {
+async function fetchReviewData(slug, searchParams) {
   const resolvedSearchParams = await searchParams;
   const preview = resolvedSearchParams?.preview === "true";
 
-  const reviewResponse = await getReviews(preview);
+  const reviewResponse = await getReviews(preview, slug);
   return { preview, reviewResponse };
 }
 
 // 🔹 Generate dynamic metadata
-export async function generateMetadata({ searchParams }) {
-  const { reviewResponse } = await fetchReviewData(searchParams);
+export async function generateMetadata({ params, searchParams }) {
+  const { slug } = params;
+  const { reviewResponse } = await fetchReviewData(slug, searchParams);
 
   if (!reviewResponse) {
     return {
@@ -33,7 +34,7 @@ export async function generateMetadata({ searchParams }) {
     alternates: {
       canonical:
         seo?.canonicalURL ||
-        `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/reviews/marketing-automation-team`,
+        `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/reviews/${slug}/`,
     },
     openGraph: {
       title: seo?.openGraph?.ogTitle,
@@ -55,9 +56,9 @@ export async function generateMetadata({ searchParams }) {
 }
 
 // 🔹 Page component
-const ReviewMat = async ({ searchParams }) => {
-  const { preview, reviewResponse } = await fetchReviewData(searchParams);
-
+const ReviewMat = async ({params, searchParams }) => {
+  const { slug } = params;
+  const { preview, reviewResponse } = await fetchReviewData(slug, searchParams);
   const { data, error } = reviewResponse || {};
   if (error) {
     return (

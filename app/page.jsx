@@ -32,7 +32,7 @@ export async function generateMetadata({ searchParams }) {
     description: seo?.metaDescription || homeResponse?.data?.[0]?.excerpt,
     keywords: seo?.keywords ? seo?.keywords.split(",").map((k) => k.trim()) : [],
     alternates: {
-      canonical: seo?.canonicalURL || `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}`,
+      canonical: seo?.canonicalURL || `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/`,
     },
     openGraph: {
       title: seo?.openGraph?.ogTitle,

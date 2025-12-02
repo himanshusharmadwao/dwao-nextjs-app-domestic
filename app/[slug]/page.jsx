@@ -42,7 +42,7 @@ export async function generateMetadata({ params, searchParams }) {
         ...(seo?.keywords && { keywords: seo.keywords.split(",").map(k => k.trim()) }),
         alternates: {
           canonical: seo?.canonicalURL ||
-            `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/service/${slug}`,
+            `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/service/${slug}/`,
         },
         openGraph: {
           title: seo?.openGraph?.ogTitle,
@@ -69,7 +69,7 @@ export async function generateMetadata({ params, searchParams }) {
         ...(seo?.keywords && { keywords: seo.keywords.split(",").map(k => k.trim()) }),
         alternates: {
           canonical: seo?.canonicalURL ||
-            `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/${slug}`,
+            `${process.env.NEXT_PUBLIC_DWAO_DOMESTIC_URL}/${slug}/`,
         },
         openGraph: {
           title: seo?.openGraph?.ogTitle,

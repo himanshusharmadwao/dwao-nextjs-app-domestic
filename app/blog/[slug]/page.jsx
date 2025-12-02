@@ -34,7 +34,7 @@ export async function generateMetadata({ params, searchParams }) {
     alternates: {
       canonical:
         seo?.canonicalURL ||
-        `${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/blog/${resolvedParams.slug}`,
+        `${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/blog/${resolvedParams.slug}/`,
     },
     openGraph: {
       title: seo?.openGraph?.ogTitle,

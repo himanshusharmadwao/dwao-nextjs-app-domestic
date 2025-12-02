@@ -33,7 +33,7 @@ export async function generateMetadata({ searchParams }) {
     alternates: {
       canonical:
         seo?.canonicalURL ||
-        `${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/privacy-policy`,
+        `${process.env.NEXT_PUBLIC_DWAO_GLOBAL_URL}/privacy-policy/`,
     },
     openGraph: {
       title: seo?.openGraph?.ogTitle,

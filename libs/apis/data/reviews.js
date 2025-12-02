@@ -1,6 +1,6 @@
 import { getRevalidateTime } from "@/libs/utils";
 
-export const getReviews = async (preview = false) => {
+export const getReviews = async (preview = false, slug) => {
 
   try {
     let url = `${process.env.NEXT_PUBLIC_API_BASE_URL}/reviews-mats?` +
@@ -11,6 +11,10 @@ export const getReviews = async (preview = false) => {
       `&populate[14]=employee_testimonial&populate[15]=employee_testimonial.entity.image&populate[16]=employee_testimonial.regions` +
       `&populate[17]=regions` +
       `&filters[regions][slug][$eq]=in-en`;
+
+    if (slug !== undefined) {
+      url += `&filters[slug][$eq]=${slug}`;
+    }
 
     if (preview) {
       url += `&status=draft`;
