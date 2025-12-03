@@ -26,7 +26,12 @@ const Newsletter = () => {
 
         try {
             const result = await submitSubscriber(subscriber);
-            console.log("Form submitted:", result);
+            // Backend validation
+            if (result.error) {
+                toast.error(result.error, toastStyle);
+                return;
+            }
+            // console.log("Form submitted:", result);
             toast("Form submission succeeded", toastStyle);
             setSubscriber('');
         } catch (error) {

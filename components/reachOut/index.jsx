@@ -53,13 +53,17 @@ export const Reachout = () => {
 
         try {
             const result = await reachOut(formData);
+            if (result.error) {
+                toast.error(result.error, toastStyle);
+                return;
+            }
             toast("Form submission succeeded", toastStyle);
             setFormData({
                 phone: "",
                 email: "",
             });
         } catch (error) {
-            toast.error ("Form submission failed", toastStyle);
+            toast.error("Form submission failed", toastStyle);
             console.error(error);
         }
     };

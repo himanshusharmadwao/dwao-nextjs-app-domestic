@@ -61,7 +61,13 @@ const ContactForm = () => {
     }
 
     try {
-      await submitContactForm(formData);
+      const { data, error } = await submitContactForm(formData);
+
+      // Backend validation
+      if (error) {
+        toast.error(error, toastStyle);
+        return;
+      }
       toast("Form submission succeeded", toastStyle);
       setFormData({
         name: "",
