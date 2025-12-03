@@ -1,4 +1,3 @@
-// app/[...slug]/page.jsx
 import React from "react";
 import SinglePageWrapper from "@/components/wrapper/single-page";
 import StructuredData from "@/components/StructuredData";

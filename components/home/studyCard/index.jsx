@@ -19,8 +19,8 @@ const StudyCard = ({ imageSrc, title, description, href }) => {
             {/* Content Section */}
             <div className="py-6 relative z-10">
                 <div className="flex justify-between ">
-                    <Link prefetch={false}  href={href} className="transition-all duration-300 leading-[27px] text-[25px] hover:text-[var(--mainColor)]">{title}</Link>
-                    <Link prefetch={false}  href={href} aria-label="Bookmark this item" title="Bookmark">
+                    <Link prefetch={false} href={href} className="transition-all duration-300 leading-[27px] text-[25px] hover:text-[var(--mainColor)]">{title}</Link>
+                    <Link prefetch={false} href={href} aria-label="Bookmark this item" title="Bookmark">
                         <span className="relative  mt-2">
                             {/* Default: Outlined icon (Visible by default) */}
                             <svg
@@ -54,9 +54,11 @@ const StudyCard = ({ imageSrc, title, description, href }) => {
                         </span>
                     </Link>
                 </div>
-                <p className="mt-2 text-con text-con-light"> {description?.length > 80 ? `${description?.slice(0, 80)}...` : `${description}...`} </p>
+                {description != null && (
+                    <p className="mt-2 text-con text-con-light"> {description?.length > 80 ? `${description?.slice(0, 80)}...` : `${description}...`} </p>
+                )}
             </div>
-            <Link prefetch={false}  href={href} className="group flex items-center gap-2" aria-label="Learn More">
+            <Link prefetch={false} href={href} className="group flex items-center gap-2" aria-label="Learn More">
                 <span className="transition-transform transition-opacity duration-300 ease-in-out opacity-0 translate-x-0 group-hover:translate-x-2 group-hover:opacity-100">
                     <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fillRule="evenodd">
