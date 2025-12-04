@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-import { submitContactForm } from "@/libs/apis/data/contact";
 import { toastStyle } from "@/components/toastNotification";
 import InputField from "@/components/ui/inputField";
 import SubmitButton from "@/components/ui/submitButton";
@@ -14,6 +13,8 @@ const ContactForm = () => {
     email: "",
     message: "",
   });
+
+  const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -56,20 +57,56 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!validateForm()) {
-      return;
-    }
+    if (!validateForm()) return;
+
+    setLoading(true);
 
     try {
-      const { data, error } = await submitContactForm(formData);
+      const payload = {
+        fname: formData.name,
+        email: formData.email,
+        number: formData.phone,
+        message: formData.message,
+        page_url: window.location.href,
+      };
 
-      // Backend validation
-      if (error) {
-        toast.error(error, toastStyle);
+      const response = await fetch(
+        "https://8kb7ux2337.execute-api.ap-south-1.amazonaws.com/createlead",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(payload),
+        }
+      );
+
+      // handle http error
+      if (!response.ok) {
+        const err = await response.json().catch(() => null);
+        const msg = err?.message || err?.error || "Something went wrong.";
+        toast.error(msg, toastStyle);
         return;
       }
 
+      // parse json
+      const result = await response.json().catch(() => ({}));
+
+      // backend error in json
+      if (result.error || result.message === "error") {
+        toast.error(result.error || result.message, toastStyle);
+        return;
+      }
+
+      // Fire Google conversion pixel
+      var img = document.createElement("img");
+      img.src =
+        "https://www.googleadservices.com/pagead/conversion/643192894/?value=1.0&currency_code=INR&label=B3WkCKTb0_IaEL6w2bIC&guid=ON&script=0";
+      img.height = 1;
+      img.width = 1;
+      img.style.display = "none";
+      document.body.appendChild(img);
+
       toast("Form submission succeeded", toastStyle);
+
       setFormData({
         name: "",
         phone: "",
@@ -77,10 +114,13 @@ const ContactForm = () => {
         message: "",
       });
     } catch (error) {
-      console.error("Form submission error:", error.response?.data || error.message);
-      const errorMessage =
-        error.response?.data?.message || "Form submission failed. Please try again.";
-      toast.error(errorMessage, toastStyle);
+      console.error("Form submission error:", error);
+      toast.error(
+        error.message || "Form submission failed. Please try again.",
+        toastStyle
+      );
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -95,6 +135,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </div>
+
       <div className="mb-3">
         <InputField
           type="text"
@@ -104,6 +145,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </div>
+
       <div className="mb-3">
         <InputField
           type="email"
@@ -113,6 +155,7 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </div>
+
       <div className="mb-3">
         <InputField
           type="text"
@@ -122,8 +165,13 @@ const ContactForm = () => {
           onChange={handleChange}
         />
       </div>
+
       <div className="mb-3">
-        <SubmitButton linkText="Submit" linkType="submit" />
+        <SubmitButton
+          linkText={loading ? "Submitting..." : "Submit"}
+          linkType="submit"
+          disabled={loading}
+        />
       </div>
     </form>
   );
