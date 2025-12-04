@@ -12,12 +12,11 @@ const OverlayCard = ({ data={}, className = "" }) => {
         <div className={`relative lg:order-2 order-1 ${className}`}>
             <Link prefetch={false}
             href={`/insights-and-case-studies/${data?.slug}` || '#'}
-            className="relative group w-full lg:inline inline-block">
+            className="relative group w-full aspect-[350/245] inline-block">
                 <Image
                     src={getImageUrl(data?.thumbnail) || "/featured-thumb-airtel.webp"}
                     alt="Card Image"
-                    width={394}
-                    height={293}
+                    fill
                     priority
                     className="w-full h-auto object-cover rounded-[10px]"
                 />

@@ -43,6 +43,8 @@ const LoadingPlaceholder = () => (
 
 const HomeWrapper = async ({ isMobile, data, preview }) => {
 
+    // console.log("data: ", data)
+
     // Fetch remaining data in parallel
     const [
         clientTestimonialResponse,

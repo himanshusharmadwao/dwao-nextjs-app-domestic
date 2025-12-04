@@ -26,7 +26,6 @@ const Newsletter = () => {
 
         try {
             const result = await submitSubscriber(subscriber);
-            // Backend validation
             if (result.error) {
                 toast.error(result.error, toastStyle);
                 return;

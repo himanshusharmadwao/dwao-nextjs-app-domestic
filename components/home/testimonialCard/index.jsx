@@ -2,10 +2,16 @@ import React from "react";
 // import { FaStar } from "react-icons/fa";
 import Image from "next/image";
 
-const TestimonialCard = ({ rating, quote, name, title, imageSrc }) => {
+const TestimonialCard = ({ rating, quote, name, title, imageSrc, type }) => {
     // console.log(imageSrc)
     return (
-        <div className="p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.1)] max-w-sm mx-auto relative min-h-[255px] bg-white mb-10">
+        <div
+            className={`
+                p-6 rounded-lg shadow-[0_2px_10px_rgba(0,0,0,0.1)]
+                max-w-sm mx-auto relative bg-white mb-10
+                ${type === "emp_test" ? "min-h-[510px]" : "min-h-[255px]"}
+            `}
+        >
             <div className="absolute top-[10px] right-[10px]">
                 <Image
                     src={"/icons/quote.png"}
@@ -60,7 +66,7 @@ const TestimonialCard = ({ rating, quote, name, title, imageSrc }) => {
             </blockquote>
 
             {/* User Info Section */}
-            <div className="flex items-center mt-4">
+            <div className="flex items-center mt-4 absolute bottom-6">
                 {imageSrc && (
                     <Image
                         src={imageSrc}

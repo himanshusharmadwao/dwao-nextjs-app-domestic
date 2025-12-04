@@ -6,12 +6,11 @@ const StudyCard = ({ imageSrc, title, description, href }) => {
     return (
         <div className="w-full group">
             {/* Image Section */}
-            <div className="relative rounded-lg overflow-hidden">
+            <div className="relative rounded-lg w-full aspect-[350/245] overflow-hidden">
                 <Image
                     src={imageSrc || "/featured-thumb-lenskart.webp"}
                     alt={title || "Card Image"}
-                    width={200}
-                    height={140}
+                    fill
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
                 />
             </div>

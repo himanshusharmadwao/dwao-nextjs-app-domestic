@@ -68,6 +68,7 @@ const ContactForm = () => {
         toast.error(error, toastStyle);
         return;
       }
+
       toast("Form submission succeeded", toastStyle);
       setFormData({
         name: "",

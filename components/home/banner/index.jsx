@@ -53,7 +53,7 @@ const Banner = ({ data, isMobile }) => {
                         {isMobile && item.mobileImg?.url ? (
                             <div className="relative aspect-[7/10] lg:hidden">
                                 <Image
-                                    src={getImageUrl(item.mobileImg)}
+                                    src={getImageUrl(item?.mobileImg)}
                                     alt={item.title || "Banner Image"}
                                     fill
                                     priority={index === 0}
@@ -66,7 +66,7 @@ const Banner = ({ data, isMobile }) => {
                         ) : item.deskImg?.url ? (
                             <div className="relative aspect-[15/7] hidden lg:block">
                                 <Image
-                                    src={getImageUrl(item.deskImg)}
+                                    src={getImageUrl(item?.deskImg)}
                                     alt={item.title || "Banner Image"}
                                     fill
                                     priority={index === 0}
